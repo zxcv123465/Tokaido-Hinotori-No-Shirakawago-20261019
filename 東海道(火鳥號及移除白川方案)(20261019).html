@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 東海道追熊、雙煙火、飛驒秋景與萬聖節｜11天完整行程</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=DM+Mono:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0d1f35;--blue:#125393;--ice:#e0effe;--ice2:#badefc;--white:#fff;
+  --surface:#f4f7fc;--surface2:#dce7f5;--accent:#c86211;--danger:#bd2020;
+  --danger-bg:#ffe5e5;--warn:#8a5a00;--warn-bg:#fff6d6;--green:#0f6b3d;
+  --green-bg:#dcfce7;--purple:#4c2e9c;--purple-bg:#ede9fe;--gray:#475569;
+  --text:#0f172a;--text2:#334155;--border:rgba(15,23,42,.12);
+  --border2:rgba(15,23,42,.22);--shadow:0 2px 16px rgba(10,30,60,.12);
+  --r:14px;--r-sm:8px;
+  --ink:#0f172a;--paper:#faf8f5;--warm:#f2eae1;
+  --amber:#964800;--amber-light:#c26a10;--amber-pale:#fef3c7;
+  --red:#991b1b;--red-pale:#fee2e2;
+  --g2:#166534;--g2-pale:#dcfce7;
+  --n2:#1e3a8a;--n2-pale:#dbeafe;
+  --purp:#581c87;--purp-pale:#f3e8ff;
+  --hida:#5c3a00;--hida-pale:#fef3c7;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans TC',-apple-system,sans-serif;background:var(--surface);color:var(--text);padding-bottom:80px;line-height:1.5;}
+.hero{background:var(--navy);padding:28px 20px 22px;text-align:center;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 60%,rgba(45,143,232,.25) 0%,transparent 60%);}
+.hero h1{font-size:1.35rem;font-weight:900;color:#ffffff;position:relative;margin-bottom:6px;letter-spacing:0.02em;}
+.hero p{font-size:.85rem;color:#f1f5f9;position:relative;font-weight:500;}
+.vbadge{display:inline-block;background:rgba(255,255,255,.2);color:#ffffff;font-size:.72rem;padding:3px 10px;border-radius:5px;margin-top:8px;position:relative;font-weight:700;}
+.vbadge.new{background:#c86211;color:#ffffff;}
+.nav-wrap{position:sticky;top:0;z-index:1000;background:var(--navy);padding:0 12px 10px;}
+.nav{display:flex;background:rgba(255,255,255,.12);border-radius:10px;gap:4px;padding:4px;overflow-x:auto;scrollbar-width:none;}
+.nav::-webkit-scrollbar{display:none;}
+.nav-item{flex-shrink:0;padding:10px 14px;text-align:center;color:#f1f5f9;cursor:pointer;font-weight:700;font-size:.8rem;border-radius:7px;transition:all .2s;white-space:nowrap;border:none;background:none;}
+.nav-item:hover{color:#ffffff;background:rgba(255,255,255,.18);}
+.nav-item.active{background:var(--blue);color:#ffffff;box-shadow:0 2px 8px rgba(0,0,0,.2);}
+.nav-item.food-nav.active{background:var(--amber);color:#ffffff;}
+.section{display:none;padding:16px 14px;max-width:860px;margin:0 auto;}
+.section.active{display:block;}
+.tab-bar{display:flex;gap:6px;margin-bottom:1.4rem;flex-wrap:wrap;}
+.tab-btn{padding:6px 12px;border-radius:var(--r-sm);border:1.5px solid var(--border2);background:var(--white);color:var(--text2);font-size:.75rem;font-weight:700;cursor:pointer;transition:all .15s;font-family:'Noto Sans TC',sans-serif;white-space:nowrap;}
+.tab-btn.active{background:var(--blue);color:#ffffff;border-color:var(--blue);}
+.tab-btn.hida{border-color:#785200;color:#5c3a00;background:#fefce8;}
+.tab-btn.hida.active{background:#5c3a00;color:#ffffff;border-color:#5c3a00;}
+.tab-btn.firework{border-color:#c86211;color:#9a3412;background:#fff7ed;}
+.tab-btn.firework.active{background:#c86211;color:#ffffff;border-color:#c86211;}
+.day-panel{display:none;}
+.day-panel.active{display:block;}
+.dc{background:var(--white);border-radius:var(--r);padding:20px;box-shadow:var(--shadow);}
+.dh{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:16px;gap:10px;}
+.dt{font-size:1.05rem;font-weight:900;color:var(--navy);}
+.ds{font-size:.82rem;color:var(--text2);margin-top:4px;font-weight:500;}
+.cbadge{background:var(--green-bg);color:var(--green);font-size:.75rem;font-weight:900;padding:5px 11px;border-radius:var(--r-sm);white-space:nowrap;flex-shrink:0;border:1px solid rgba(15,107,61,.2);}
+.tl{border-left:2px solid var(--border2);margin-left:8px;padding-left:20px;}
+.ti{position:relative;margin-bottom:22px;}
+.ti::before{content:'';position:absolute;left:-27px;top:5px;width:12px;height:12px;border-radius:50%;border:2px solid var(--border2);background:var(--white);}
+.ti.bear::before{background:#125393;border-color:#125393;}
+.ti.food::before{background:#964800;border-color:#964800;}
+.ti.move::before{background:var(--green);border-color:var(--green);}
+.ti.hotel::before{background:var(--purple);border-color:var(--purple);}
+.ti.night::before{background:#0f172a;border-color:#334155;}
+.ti.shop::before{background:var(--purple);border-color:var(--purple);}
+.ti.warn::before{background:var(--danger);border-color:var(--danger);}
+.ti.shrine::before{background:#785200;border-color:#785200;}
+.ti.firework::before{background:#c86211;border-color:#c86211;}
+.ti.sub{margin-left:14px;margin-bottom:16px;}
+.ti.sub::before{width:8px;height:8px;left:-23px;top:6px;}
+.ti.sub .tlab{font-size:.68rem;}
+.ti.sub .tttl{font-size:.82rem;}
+.ti.sub .tdsc{font-size:.76rem;}
+.tlab{font-size:.75rem;color:#475569;font-weight:700;letter-spacing:.02em;margin-bottom:4px;font-family:'DM Mono',monospace;}
+.tttl{font-size:.92rem;font-weight:900;color:var(--navy);margin-bottom:5px;}
+.tdsc{font-size:.82rem;color:var(--text2);line-height:1.6;font-weight:500;}
+.itag{display:inline-flex;align-items:center;padding:3px 8px;border-radius:5px;font-size:.72rem;font-weight:900;white-space:nowrap;}
+.tbear{background:#dbeafe;color:#1e40af;}
+.tfood{background:#ffedd5;color:#9a3412;}
+.tshop{background:var(--purple-bg);color:var(--purple);}
+.tnight{background:#1e293b;color:#f1f5f9;}
+.tflight{background:var(--navy);color:#ffffff;}
+.tshrine{background:#fef3c7;color:#78350f;}
+.tfirework{background:#ffedd5;color:#c2410c;}
+.tipbox{background:var(--warn-bg);border-left:4px solid var(--warn);padding:10px 14px;border-radius:0 var(--r-sm) var(--r-sm) 0;margin-top:10px;font-size:.8rem;color:var(--warn);line-height:1.6;font-weight:700;}
+.infobox{background:var(--ice);border-left:4px solid var(--blue);padding:10px 14px;border-radius:0 var(--r-sm) var(--r-sm) 0;margin-top:10px;font-size:.8rem;color:var(--blue);line-height:1.6;font-weight:700;}
+.okbox{background:var(--green-bg);border-left:4px solid var(--green);padding:10px 14px;border-radius:0 var(--r-sm) var(--r-sm) 0;margin-top:10px;font-size:.8rem;color:var(--green);line-height:1.6;font-weight:700;}
+.hb{display:inline-block;background:var(--navy);color:#fff;font-size:.7rem;font-weight:700;padding:3px 8px;border-radius:4px;margin-left:6px;}
+.hb.hida{background:#5c3a00;}
+.beargrp{background:var(--white);border-radius:var(--r);padding:18px;margin-bottom:14px;box-shadow:var(--shadow);border-left:6px solid var(--blue);}
+.beargrp.hida{border-left-color:#785200;}
+.beargrp h3{font-size:.92rem;color:var(--navy);font-weight:900;margin-bottom:10px;}
+.bearrow{display:flex;align-items:flex-start;gap:10px;padding:8px 0;border-bottom:1px solid var(--border);font-size:.85rem;}
+.bearrow:last-child{border-bottom:none;padding-bottom:0;}
+.bearnm{font-weight:900;color:var(--navy);min-width:85px;}
+.bearjp{color:var(--text2);font-size:.8rem;flex:1;font-weight:500;}
+.bearnote{font-family:'DM Mono',monospace;font-size:.75rem;color:var(--blue);text-align:right;white-space:nowrap;font-weight:700;}
+.bsec{background:var(--white);border-radius:var(--r);padding:18px;margin-bottom:16px;box-shadow:var(--shadow);}
+.bsec h3{font-size:.92rem;font-weight:900;color:var(--navy);margin-bottom:12px;}
+.btable{width:100%;border-collapse:collapse;font-size:.85rem;}
+.btable th{background:var(--navy);color:#fff;padding:10px 8px;text-align:left;font-size:.8rem;font-weight:700;}
+.btable th:not(:first-child){text-align:right;}
+.btable td{padding:10px 8px;border-bottom:1px solid var(--border);color:var(--text);font-weight:500;}
+.btable td:not(:first-child){text-align:right;font-family:'DM Mono',monospace;font-size:.8rem;font-weight:700;}
+.btable tr:nth-child(even) td{background:var(--surface);}
+.btable tr.sub td{background:var(--surface2);font-weight:900;color:var(--navy);}
+.btable tr.tot td{background:var(--warn-bg);font-weight:900;font-size:.92rem;color:var(--warn);border-top:2px solid #d97706;}
+.exrate{background:var(--ice);border-radius:var(--r-sm);padding:10px 14px;text-align:center;font-size:.85rem;color:var(--blue);font-weight:900;margin-bottom:14px;border:1px solid rgba(18,83,147,.2);}
+.sopcard{background:var(--white);border-radius:var(--r);padding:18px;margin-bottom:14px;box-shadow:var(--shadow);}
+.sopcard h3{font-size:.92rem;font-weight:900;color:var(--navy);margin-bottom:12px;border-bottom:1px solid var(--border);padding-bottom:8px;}
+.sopitem{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--border);font-size:.85rem;align-items:flex-start;}
+.sopitem:last-child{border-bottom:none;padding-bottom:0;}
+.sopkey{font-weight:900;color:var(--navy);min-width:75px;flex-shrink:0;}
+.sopval{color:var(--text2);line-height:1.6;font-weight:500;}
+.food-section { background: var(--paper); }
+.food-subnav{display:flex;gap:5px;background:rgba(15,23,42,0.08);border-radius:10px;padding:4px;margin-bottom:18px;overflow-x:auto;scrollbar-width:none;}
+.food-subnav::-webkit-scrollbar{display:none;}
+.fsub-btn{flex-shrink:0;padding:8px 14px;border-radius:7px;color:#475569;font-size:0.78rem;font-weight:700;cursor:pointer;transition:all .18s;white-space:nowrap;border:none;background:none;font-family:'Noto Sans TC',sans-serif;}
+.fsub-btn:hover{color:#0f172a;background:rgba(255,255,255,0.5);}
+.fsub-btn.active{background:var(--amber);color:#ffffff;}
+.fpanel{display:none;}
+.fpanel.active{display:block;}
+.day-row{background:#fff;border-radius:12px;padding:14px 16px;margin-bottom:12px;box-shadow:0 2px 16px rgba(15,23,42,0.06);display:flex;gap:14px;align-items:flex-start;border:1px solid var(--border);}
+.day-badge{flex-shrink:0;background:var(--amber);color:#fff;border-radius:8px;padding:5px 9px;font-family:'DM Mono',monospace;font-size:0.75rem;font-weight:700;text-align:center;line-height:1.4;min-width:42px;}
+.day-badge.hida-badge{background:var(--hida);}
+.day-content{flex:1;}
+.meal-name{font-size:0.85rem;color:var(--ink);line-height:1.55;font-weight:500;}
+.meal-backup{font-size:0.78rem;color:#64748b;font-weight:400;}
+.ml{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-bottom:1px dashed var(--border);}
+.ml:last-child{border-bottom:none;padding-bottom:0;}
+.mt{flex-shrink:0;background:var(--amber-pale);color:#7c2d12;font-size:.7rem;font-weight:900;border-radius:5px;padding:2px 7px;min-width:34px;text-align:center;margin-top:2px;}
+.dessert-grid{display:grid;grid-template-columns:1fr;gap:12px;}
+.dgrp{background:#fff;border-radius:12px;padding:14px 16px;border:1px solid var(--border);box-shadow:0 2px 16px rgba(15,23,42,0.06);}
+.dgrp h3{font-size:.9rem;font-weight:900;color:var(--amber);margin-bottom:8px;}
+.dgrp .ml .meal-name b{color:var(--navy);}
+.ti.branch{background:#fff4e0;border:1px dashed #c86211;border-radius:10px;padding:10px 12px 8px;margin-left:-4px}
+.ti.branch.b{background:#eaf3ff;border-color:#125393}
+.btag-a{background:#c86211;color:#fff}
+.btag-b{background:#125393;color:#fff}
+.btable tr.flex td{background:#fff4e0;color:#8a4b00}
+.btable tr.flex td:first-child{border-left:4px solid #c86211}
+.flexnote{background:#fff4e0;border:1px dashed #c86211;border-radius:8px;padding:8px 12px;margin-top:10px;font-size:.78rem;color:#8a4b00;font-weight:700}
+.fnote{background:var(--warn-bg);border-left:4px solid var(--warn);padding:10px 14px;border-radius:0 8px 8px 0;font-size:.78rem;color:var(--warn);font-weight:700;line-height:1.6;margin-bottom:14px;}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>🐻‍❄️ 2026 東海道：北極熊巡禮、雙煙火與飛驒秋景</h1>
+  <p>2026年10月22日（四）– 11月01日（日） 神戶入境 → 大阪 → 名古屋 → 濱松 → 靜岡 → 飛驒高山 → 名古屋 11 天完整行程</p>
+  <span class="vbadge new">最終版</span>
+</div>
+
+<div class="nav-wrap">
+  <div class="nav">
+    <div class="nav-item active" onclick="showSec('itin',this)">📅 行程</div>
+    <div class="nav-item" onclick="showSec('bears',this)">🐻 明星熊</div>
+    <div class="nav-item" onclick="showSec('transport',this)">🚗 交通</div>
+    <div class="nav-item" onclick="showSec('budget',this)">💰 預算</div>
+    <div class="nav-item food-nav" onclick="showSec('food',this)">🍱 美食</div>
+    <div class="nav-item" onclick="showSec('sop',this)">🛡️ SOP</div>
+  </div>
+</div>
+
+<div id="itin" class="section active">
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="showDay(0)">D1 10/22</button>
+    <button class="tab-btn" onclick="showDay(1)">D2 10/23</button>
+    <button class="tab-btn firework" onclick="showDay(2)">D3 10/24</button>
+    <button class="tab-btn firework" onclick="showDay(3)">D4 10/25</button>
+    <button class="tab-btn" onclick="showDay(4)">D5 10/26</button>
+    <button class="tab-btn hida" onclick="showDay(5)">D6 10/27</button>
+    <button class="tab-btn hida" onclick="showDay(6)">D7 10/28</button>
+    <button class="tab-btn hida" onclick="showDay(7)">D8 10/29</button>
+    <button class="tab-btn" onclick="showDay(8)">D9 10/30</button>
+    <button class="tab-btn" onclick="showDay(9)">D10 10/31</button>
+    <button class="tab-btn" onclick="showDay(10)">D11 11/1</button>
+  </div>
+
+  <div class="day-panel active" id="p0">
+    <div class="dc">
+      <div class="dh">
+        <div>
+          <div class="dt">D1 — 10/22（週四） 神戶落地 ➔ 大阪難波（近鐵火鳥號 Premium 7A） ➔ 名古屋送件 ➔ 夜宿濱松</div>
+          <div class="ds"><span class="itag tflight">JX306</span> 台中 08:45 → 神戶 12:30 ▸ 夜宿濱松</div>
+        </div>
+        <div class="cbadge">火鳥號 Premium 已訂</div>
+      </div>
+      <div class="tl">
+        <div class="ti move">
+          <div class="tlab">12:30 落地</div>
+          <div class="tttl">星宇 JX306 台中 (RMQ) 08:45 → 神戶 (UKB) 12:30</div>
+          <div class="tdsc">抵達神戶機場，預留 40 分鐘完成入境審查、領取行李與海關通關。早餐於台中機場出發前自理。</div>
+        </div>
+        <div class="ti move">
+          <div class="tlab">13:10–14:30</div>
+          <div class="tttl">神戶機場 → 三宮 → 大阪難波</div>
+          <div class="tdsc">全程使用 Apple Suica（西瓜卡）感應進站，搭乘 PortLiner 至三宮轉乘阪神電車快速急行直達大阪難波站。</div>
+        </div>
+        <div class="ti sub food">
+          <div class="tlab">14:30–14:55 午餐外帶</div>
+          <div class="tttl"><span class="itag tfood">午餐</span> 551蓬萊 難波本店（豬肉包／燒賣）</div>
+          <div class="tdsc">抵達難波後直接外帶熟食，在火鳥號 Premium 車廂內享用，不佔用轉車時間。備案：Namba Walk 洋食便當；或轉車時於三宮 Vie de France 買現烤起司可頌。</div>
+        </div>
+        <div class="ti move">
+          <div class="tlab">15:00–17:08</div>
+          <div class="tttl"><span class="itag tflight">近鐵特急火鳥號 Premium 綠色車廂</span> 大阪難波 → 近鐵名古屋</div>
+          <div class="tdsc">搭乘已預約之近鐵特急火鳥號頂級 Premium 綠色車廂（席位：7A）。特急＋特別車廂票價 ¥2,830（約 NT$570）已線上結清，現場進出站直接刷 Apple Suica 扣基本車資（約 ¥2,410）。</div>
+        </div>
+        <div class="ti shop">
+          <div class="tlab">17:20–18:00</div>
+          <div class="tttl"><span class="itag tshop">OWNDAYS 名古屋站送件</span></div>
+          <div class="tdsc">至名古屋站地下街（ESCA 店）送件，下單 Nikon 1.74 超薄鏡片（預計於 D10 自由日取件）。</div>
+        </div>
+        <div class="ti move">
+          <div class="tlab">18:43–19:13</div>
+          <div class="tttl">新幹線 Hikari 718號 名古屋 18:43 → 濱松 19:13</div>
+          <div class="tdsc">搭乘新幹線指定席，車程約 30 分鐘。備案：Kodama 846號 18:38 發 → 19:21 抵（19:40 前入座分支 A 會較趕，可改分支 B）。班次取自駅探時刻表（取樣日 10/11，非 10/22 當日），訂票時請以 JR 東海 EX／smartEX 確認。</div>
+        </div>
+        <div class="ti hotel">
+          <div class="tlab">19:25</div>
+          <div class="tttl">飯店 Check-in <span class="hb">濱松 1/2晚</span></div>
+          <div class="tdsc">入住 Kitanoniwa The Kuretakeso 放置 28 吋大行李。</div>
+        </div>
+        <div class="ti branch">
+          <div class="tlab">19:40–20:30｜分支 A（來得及就選這個）</div>
+          <div class="tttl"><span class="itag btag-a">分支 A</span> うなぎ藤田 濱松站前店（ホテルソリッソ浜松 2F）</div>
+          <div class="tdsc">第一天就吃鰻魚。營業 17:00–21:00（最後點餐時間未查到，建議 20:00 前入座）。若新幹線沒趕上或 19:40 前到不了餐廳，改走分支 B。選分支 A 的話，D2 晚餐換成むつぎく。</div>
+        </div>
+        <div class="ti branch b">
+          <div class="tlab">19:45–20:30｜分支 B（來不及時）</div>
+          <div class="tttl"><span class="itag btag-b">分支 B</span> むつぎく 濱松煎餃（備案：石松餃子 JR 濱松站店）</div>
+          <div class="tdsc">享用著名的圓形排列濱松煎餃。營業 17:00–21:00（週一、二公休，餃子賣完即收，建議 20:00 前入座）。若現場排隊或已售完，直接改吃營業至 22:00 的石松餃子 JR 濱松站店，再備案五味八珍 濱松站店。飯後可於站前外帶治一郎年輪蛋糕當甜點。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-panel" id="p1">
+    <div class="dc">
+      <div class="dh">
+        <div>
+          <div class="dt">D2 — 10/23（週五） 濱松市動物園「雪」全日 ➔ 蒲燒鰻魚飯</div>
+          <div class="ds">全日守候北極熊「雪」 → 鰻魚飯晚餐 ▸ 夜宿濱松</div>
+        </div>
+        <div class="cbadge">守候北極熊</div>
+      </div>
+      <div class="tl">
+        <div class="ti sub food">
+          <div class="tlab">07:30–08:15 早餐</div>
+          <div class="tttl"><span class="itag tfood">早餐</span> 客美多咖啡 濱松站前店</div>
+          <div class="tdsc">點飲料附烤吐司與水煮蛋；備案：Vie de France 濱松店。</div>
+        </div>
+        <div class="ti move">
+          <div class="tlab">08:30–09:14</div>
+          <div class="tttl"><span class="itag tbear">遠鐵巴士 [30] 舘山寺線</span></div>
+          <div class="tdsc">濱松站北口 1 號公車月台搭乘遠鐵巴士 [30] 舘山寺線（每小時約 3 班，08:30 為建議班次，車程約 40–44 分），「動物園」站下車步行 1 分鐘，約 09:14 抵達。</div>
+        </div>
+        <div class="ti bear">
+          <div class="tlab">09:15–16:00</div>
+          <div class="tttl"><span class="itag tbear">濱松市動物園</span> 雪（ゆき）</div>
+          <div class="tdsc">09:00 開園，09:14 抵達後即入場，全日守候北極熊「雪」（園內另有北極熊「バフィン」）。入園至 16:00、閉園 16:30，出園後不可再入園。16:15 搭乘遠鐵巴士 [30] 返抵濱松站 (17:00)。</div>
+          <div class="infobox">ℹ️ 官網公告：北極熊「もぐもぐタイム」每日 11:00（週四另加 13:30），地點在北極熊展示場前。10/23 為週五，只有 11:00 一場，建議 10:40 前到場卡位；活動可能因動物狀況中止。</div>
+        </div>
+        <div class="ti sub food">
+          <div class="tlab">11:30–12:30 午餐</div>
+          <div class="tttl"><span class="itag tfood">午餐</span> 園內餐飲（現場確認營業）或超商便當野餐</div>
+          <div class="tdsc">11:00 もぐもぐタイム看完後再用餐最順。預設在園內解決午餐；想出園吃鰻魚並回來，改走下方分支（需先買年票）。</div>
+        </div>
+        <div class="ti sub food">
+          <div class="tlab">14:30 甜點</div>
+          <div class="tttl"><span class="itag tfood">甜點</span> 園內販賣部冰品／霜淇淋</div>
+          <div class="tdsc">邊走邊吃，販售品項以現場為準。</div>
+        </div>
+        <div class="ti sub branch b">
+          <div class="tlab">分支｜午餐出園吃鰻魚（需買年票才能再入園）</div>
+          <div class="tttl"><span class="itag btag-b">分支</span> うなぎ専門の店 志ぶき（舘山寺）</div>
+          <div class="tdsc">💳 入園時直接買年票 ¥1,500（當日票 ¥500，多付 ¥1,000），年票可重複進出。官方資料寫「再入園不可」，年票是否放行同日再入園我沒查到，請在入口向工作人員確認。<br>① 09:15–11:30 先看熊，含 11:00 もぐもぐタイム（10:40 前卡位）。<br>② 11:30 出園，步行約 12 分鐘至志ぶき（營業 11:00–15:00，閉店 15:30；建議 11:45 前入座）。<br>③ 11:45–12:45 用餐：プチひつまぶし約 ¥2,200、うなぎ丼約 ¥2,480、上うな重約 ¥3,450（舊資料價格，現場為準）。<br>④ 約 13:15 步行回園、刷年票再入園，繼續看熊至 16:00。<br>⑤ 若入口不放行：改成下午在舘山寺溫泉區散步，約 15:00–15:30 搭遠鐵巴士 [30] 返濱松站。</div>
+        </div>
+        <div class="ti branch">
+          <div class="tlab">晚餐 18:00｜分支 A（D1 已吃鰻魚）</div>
+          <div class="tttl"><span class="itag btag-a">分支 A</span> むつぎく 濱松煎餃</div>
+          <div class="tdsc">週五營業，17:00–21:00，餃子賣完即收，建議 20:00 前入座。備案：石松餃子 JR 濱松站店（11:00–22:00、無休）。</div>
+        </div>
+        <div class="ti branch b">
+          <div class="tlab">晚餐 18:00｜分支 B（D1 吃的是餃子）</div>
+          <div class="tttl"><span class="itag btag-b">分支 B</span> 八百德蒲燒鰻魚飯</div>
+          <div class="tdsc">全日守候北極熊後享用濱松名物蒲燒鰻魚飯。營業 11:00–20:00（L.O.）。備案：うなぎ藤田 濱松站前店（11:00–14:00、17:00–21:00）、川專。</div>
+        </div>
+        <div class="ti hotel">
+          <div class="tlab">夜宿</div>
+          <div class="tttl">濱松站周邊飯店 <span class="hb">濱松 2/2晚</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-panel" id="p2">
+    <div class="dc">
+      <div class="dh">
+        <div>
+          <div class="dt">D3 — 10/24（週六） 濱松神社 ➔ 東海道新幹線移動靜岡 Check-in ➔ 🎆 燒津海上花火大會</div>
+          <div class="ds">濱松八幡宮 → 東海道新幹線 Kodama前往靜岡 (約25分) → 花火 ▸ 夜宿靜岡</div>
+        </div>
+        <div class="cbadge">🎆 花火重點</div>
+      </div>
+      <div class="tl">
+        <div class="ti sub food">
+          <div class="tlab">08:00–08:40 早餐</div>
+          <div class="tttl"><span class="itag tfood">早餐</span> Doutor 濱松站店（起司火腿三明治組合，07:00–21:30）</div>
+          <div class="tdsc">備案：北の庭 THE KURETAKESO 飯店早餐（半自助，鰻魚丼為主；加購 ¥1,500，06:30–09:30，最後進場 09:00，名額有限，入住時向櫃檯預訂）。不特別推薦：鰻魚丼應該不如專門店，且鰻魚在別餐已有安排。09:00 前完成退房。</div>
+        </div>
+        <div class="ti shrine">
+          <div class="tlab">09:00–11:00</div>
+          <div class="tttl"><span class="itag tshrine">濱松八幡宮</span>（出世之神）＆ 濱松城公園</div>
+          <div class="tdsc">濱松退房（行李寄放車站），參拜濱松八幡宮領取御朱印，順遊濱松城公園。</div>
+        </div>
+        <div class="ti sub move">
+          <div class="tlab">11:58–12:23</div>
+          <div class="tttl">新幹線 Kodama 816號（11:58發）</div>
+          <div class="tdsc">濱松站前往靜岡站，約 25 分鐘輕鬆抵達（12:23抵），避免普通車 70 分鐘長途站立。至飯店 Check-in 寄放行李。備案：Kodama 814號 11:25 發 → 11:52 抵。班次取自駅探時刻表（取樣日 10/7，非 10/24 當日），訂票時請再確認。</div>
+        </div>
+        <div class="ti sub food">
+          <div class="tlab">12:40 午餐</div>
+          <div class="tttl"><span class="itag tfood">午餐</span> 靜岡站內 清水港「まぐろカツ丼」（全熟炸鮪魚排丼）</div>
+          <div class="tdsc">清水鮪魚特色但全熟。備案：一風堂 靜岡ASTY店（豚骨拉麵加炸雞塊）、ASTY 美食街炸豬排定食。</div>
+        </div>
+        <div class="ti sub food">
+          <div class="tlab">14:00–16:00 甜點</div>
+          <div class="tttl"><span class="itag tfood">甜點</span> ななや 靜岡本店（No.1–No.7 濃度抹茶冰淇淋）</div>
+          <div class="tdsc">下午靜岡市區逛街採買時順路。備案：キルフェボン 靜岡本店水果塔（週六易排隊，排隊就改外帶或放棄）。</div>
+        </div>
+        <div class="ti sub food">
+          <div class="tlab">16:30–17:10 晚餐備糧</div>
+          <div class="tttl"><span class="itag tfood">晚餐</span> 靜岡站 ASTY 購買熟食便當，燒津再搭配花火屋台小吃</div>
+          <div class="tdsc">花火 18:30 才開始，17:21 發車前先把晚餐買好最穩，不必在燒津會場排隊買餐。</div>
+        </div>
+        <div class="ti firework">
+          <div class="tlab">17:15–20:40</div>
+          <div class="tttl"><span class="itag tfirework">🎆 市制75周年 第 51 屆燒津海上花火大會</span></div>
+          <div class="tdsc">17:21 靜岡站搭乘 JR 東海道本線普通列車至燒津站（17:33抵，車程 12 分），觀賞第 51 屆燒津海上花火大會（18:30–20:00 施放，市制75周年特別企劃約 8,000 發，較往年規模更大）。觀賞後 20:40 搭乘電車返回靜岡，宵夜享用「靜岡關東煮（青葉關東煮街）」。</div>
+          <div class="infobox">ℹ️ 官方公告為「市制75周年紀念特別企劃」，發數已由往年約 5,000 發擴大為約 8,000 發；一般觀覽席 14:30 開放、協贊棧敷席 16:30 開放，建議提早卡位。一般席為免費站席（官方資料無付費席，付費的是協贊者桟敷席），會場有沒有屋台沒查到。是否久站待位，到時現場再決定，不想一直待在原地就不去。</div>
+        </div>
+        <div class="ti sub food">
+          <div class="tlab">21:30 宵夜</div>
+          <div class="tttl"><span class="itag tfood">宵夜</span> 青葉橫丁 靜岡關東煮（三河屋）</div>
+          <div class="tdsc">三河屋營業 17:00–23:00（週日、假日休，D3 週六可入）。備案：靜岡站內 三寶樂（和洋食漢堡排）。</div>
+        </div>
+        <div class="ti hotel">
+          <div class="tlab">夜宿</div>
+          <div class="tttl">靜岡站周邊飯店 <span class="hb">靜岡 1/3晚（連住 3 晚不搬行李）</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-panel" id="p3">
+    <div class="dc">
+      <div class="dh">
+        <div>
+          <div class="dt">D4 — 10/25（週日） 日本平動物園「羅西・香草」➔ 🎆 熱海海上花火大會</div>
+          <div class="ds">猛獸館299北極熊觀察 → 新幹線前往熱海看煙火 ▸ 夜宿靜岡</div>
+        </div>
+        <div class="cbadge">🎆 花火重點</div>
+      </div>
+      <div class="tl">
+        <div class="ti sub food">
+          <div class="tlab">07:30–08:10 早餐</div>
+          <div class="tttl"><span class="itag tfood">早餐</span> St.Marc Cafe 靜岡站前店（巧克力可頌＋美式）</div>
+          <div class="tdsc">備案：Starbucks 靜岡站前店（牛肉起司帕里尼＋拿鐵）。08:24 巴士前務必到站。</div>
+        </div>
+        <div class="ti move">
+          <div class="tlab">08:20–08:46</div>
+          <div class="tttl"><span class="itag tbear">靜鐵巴士 日本平線</span></div>
+          <div class="tdsc">靜岡站北口 11 號月台搭乘 08:24 發車公車，08:46 抵達日本平動物園。</div>
+        </div>
+        <div class="ti bear">
+          <div class="tlab">09:00–12:30</div>
+          <div class="tttl"><span class="itag tbear">日本平動物園</span> 羅西（ロッシー）＆ 香草（バニラ）</div>
+          <div class="tdsc">進入「猛獸館 299」透過圓形觀察筒近距離看北極熊羅西與香草。08:46 抵達後在門口等 09:00 開園（週一休園，10/25 為週日）。官方每日活動表沒有北極熊固定餵食秀，以全天自由觀察為主。</div>
+        </div>
+        <div class="ti sub food">
+          <div class="tlab">11:00–12:15 午餐</div>
+          <div class="tttl"><span class="itag tfood">午餐</span> 園內 Rest House（日式蛋包飯／炸雞咖哩飯）</div>
+          <div class="tdsc">山腰展區沒有園外餐廳，建議 12:30 前用完，避開 11:30–13:30 的園區尖峰。備案：當早在靜岡站預購熱壓吐司／漢堡便當，或園內輕食販賣部（熱狗堡＋薯條）。</div>
+        </div>
+        <div class="ti bear">
+          <div class="tlab">彈性</div>
+          <div class="tttl"><span class="itag tbear">猛獸館 299 自由觀察</span></div>
+          <div class="tdsc">整天以北極熊為主，其餘彈性安排。<br>ℹ️ 資訊（不排入行程）：10/25 官方活動有美洲獅餵食體驗，13:00–13:15 於猛獸館 4F 露台領抽選券（定員 10 名、13:20 公布、雨天中止），13:30–14:00 舉行。北極熊沒有固定餵食秀。</div>
+        </div>
+        <div class="ti bear">
+          <div class="tlab">14:30–16:15</div>
+          <div class="tttl">日本平動物園其他展區</div>
+          <div class="tdsc">午後不急著離園，順遊日本平動物園其他動物展區、稍作休息，16:15 前往巴士站集合準備返程。</div>
+        </div>
+        <div class="ti sub food">
+          <div class="tlab">14:40 甜點</div>
+          <div class="tttl"><span class="itag tfood">甜點</span> 園內霜淇淋／冰品</div>
+          <div class="tdsc">備案：17:07 返抵靜岡站後、17:26 發車前，於站內外帶甜點。</div>
+        </div>
+        <div class="ti sub move">
+          <div class="tlab">16:35–18:01</div>
+          <div class="tttl">靜鐵巴士 日本平線（16:35發）→ 新幹線 Kodama 836號（17:26發）</div>
+          <div class="tdsc">日本平動物園巴士站搭乘巴士返抵靜岡駅前（17:07抵，縣府資料確認；動物園附近有兩個巴士站，注意站名），轉乘新幹線前往熱海站（18:01抵，車程 35 分）。備案：Kodama 838號 17:56 發 → 18:31 抵。班次取自駅探時刻表（取樣日 10/16，非 10/25 當日），訂票時請再確認。</div>
+        </div>
+        <div class="ti food">
+          <div class="tlab">18:15–19:15</div>
+          <div class="tttl"><span class="itag tfood">熱海站前 KURIYA（熱海まぐろ市場）／壹番</span></div>
+          <div class="tdsc">趁人潮尚未湧入前先用晚餐，避開煙火散場後的排隊與進站管制人潮。點全熟炸魚／熟食海鮮定食。備案：熱海站 LUSCA 伊豆太郎（熟食海鮮定食）。KURIYA 營業 11:00–21:00（L.O. 20:00）；LUSCA 伊豆太郎 11:00–21:30（L.O. 20:45）。</div>
+        </div>
+        <div class="ti move">
+          <div class="tlab">19:15–20:00</div>
+          <div class="tttl">移動至觀賞地點卡位</div>
+          <div class="tdsc">前往熱海港岸壁～海釣施設一帶（サンビーチ海岸）提早卡位，現場無遮蔽、無付費席。</div>
+        </div>
+        <div class="ti firework">
+          <div class="tlab">20:20–20:40</div>
+          <div class="tttl"><span class="itag tfirework">🎆 秋季熱海海上花火大會</span></div>
+          <div class="tdsc">觀賞熱海海上花火大會（約3,000發，20:20–20:40），三面環山的海灣煙火聲響極具震撼力！看完步行至熱海站（約 20 分鐘，散場人潮多），搭乘 22:04 新幹線 Kodama 909號（終點靜岡）返回靜岡站 (22:36抵)。更早的 21:13 Kodama 857號（21:46抵）在 20:40 散場後只剩約 13 分鐘，只適合散場立刻快走、且人潮不擁擠時。</div>
+          <div class="infobox">ℹ️ 此場為「秋季熱海海上花火大會」年度 5 場其中一場（9/13・10/12・<strong>10/25</strong>・11/8・11/23），官方時刻表已確認 20:20–20:40 施放、無付費席，現場無遮蔽、建議提早到場卡位。另查到：會場為熱海港 7.5m 岸壁～海釣設施，JR 熱海站步行約 20 分鐘；雨天決行；有屋台；市道東海岸通り線 20:10–20:55 交通管制。看完走回車站約 20 分鐘，趕 22:04 的 Kodama 909 時間充裕。</div>
+        </div>
+        <div class="ti hotel">
+          <div class="tlab">夜宿</div>
+          <div class="tttl">靜岡站周邊飯店 <span class="hb">靜岡 2/3晚</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-panel" id="p4">
+    <div class="dc">
+      <div class="dh">
+        <div>
+          <div class="dt">D5 — 10/26（週一） 靜岡淺間神社 ➔ 久能山東照宮 ＋ 日本平夢露台 ➔ 炸豬排晚餐</div>
+          <div class="ds">德川家康長眠地 + 富士山展望夢露台 + 靜岡在地炸豬排 ▸ 夜宿靜岡（無預約卡點，可彈性調動購物）</div>
+        </div>
+        <div class="cbadge">靜岡人文美食</div>
+      </div>
+      <div class="tl">
+        <div class="ti sub food">
+          <div class="tlab">08:00–08:40 早餐</div>
+          <div class="tttl"><span class="itag tfood">早餐</span> 客美多咖啡 靜岡站前店（烤吐司＋雞蛋沙拉）</div>
+          <div class="tdsc">備案：Vie de France 靜岡站店（起司火腿可頌＋拿鐵）。</div>
+        </div>
+        <div class="ti shrine">
+          <div class="tlab">09:00–11:30</div>
+          <div class="tttl"><span class="itag tshrine">靜岡淺間神社</span>（東海之日光）</div>
+          <div class="tdsc">靜岡站搭市公車前往（10 分鐘），參拜靜岡淺間神社並領取御朱印。</div>
+        </div>
+        <div class="ti shrine">
+          <div class="tlab">11:45–15:30</div>
+          <div class="tttl"><span class="itag tshrine">久能山東照宮</span> ＆ 日本平夢露台</div>
+          <div class="tdsc">11:45 靜岡站搭乘靜鐵巴士日本平線至纜車站，搭乘日本平纜車前往久能山東照宮（德川家康長眠地，御朱印）；下山後至「日本平夢露台（日本平夢テラス）」眺望富士山全景。</div>
+          <div class="infobox">ℹ️ 久能山山麓的「石垣いちご」草莓園產季為 12 月上旬至隔年 5 月，10 月下旬尚未開放採果，故本行程不安排草莓體驗，改以日本平夢露台的富士山展望取代。</div>
+        </div>
+        <div class="ti sub food">
+          <div class="tlab">13:00 午餐</div>
+          <div class="tttl"><span class="itag tfood">午餐</span> 日本平夢テラス Cafe（靜岡茶泡飯／西式三明治）</div>
+          <div class="tdsc">邊用餐邊看富士山。備案：久能山纜車站旁山頂休憩所（熱烏龍／蕎麥麵，可加炸櫻花蝦）、返回靜岡站 ASTY 美食街炸豬排定食。</div>
+        </div>
+        <div class="ti sub food">
+          <div class="tlab">15:45 甜點</div>
+          <div class="tttl"><span class="itag tfood">甜點</span> CHA10 靜岡店（有機抹茶芭菲）</div>
+          <div class="tdsc">返回靜岡市區後的下午茶。</div>
+        </div>
+        <div class="ti food">
+          <div class="tlab">17:30–18:30</div>
+          <div class="tttl"><span class="itag tfood">靜岡勝富 炸豬排定食</span></div>
+          <div class="tdsc">從日本平方向搭巴士返回靜岡站附近用餐，純豬肉炸豬排、不含蝦類，一般座位無需排隊；備案：靜岡おでん橫丁（青葉横丁，多樣關東煮店家，同樣不含蝦類主餐）。</div>
+        </div>
+        <div class="ti hotel">
+          <div class="tlab">夜宿</div>
+          <div class="tttl">靜岡站周邊飯店 <span class="hb">靜岡 3/3晚（明日退房）</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-panel" id="p5">
+    <div class="dc">
+      <div class="dh">
+        <div>
+          <div class="dt">D6 — 10/27（週二） 靜岡 ➔ JR特急ひだ 7號 ➔ 高山陣屋與古建築深度探索 ➔ 飛驒牛燒肉</div>
+          <div class="ds">高山老街悠閒漫遊 ▸ 夜宿飛驒高山</div>
+        </div>
+        <div class="cbadge">高山老街漫遊</div>
+      </div>
+      <div class="tl">
+        <div class="ti sub food">
+          <div class="tlab">07:45 早餐</div>
+          <div class="tttl"><span class="itag tfood">早餐</span> Doutor 靜岡站店（起司火腿三明治＋熱拿鐵）</div>
+          <div class="tdsc">備案：超商熱狗堡／美式鬆餅＋熱咖啡。</div>
+        </div>
+        <div class="ti move">
+          <div class="tlab">08:15–10:05</div>
+          <div class="tttl">靜岡退房 → 新幹線至名古屋（預留轉乘緩衝）</div>
+          <div class="tdsc">08:15 前後完成飯店退房，搭乘新幹線 Hikari 703號（09:07發➔10:01抵）前往名古屋。抵達後距離 10:48 的ひだ 7號有 47 分鐘緩衝，可劃位、換領飛騨エリアフリーきっぷ並購買午餐。備案：Kodama 805號 08:53 發 → 10:06 抵；想早點到名古屋可搭 Kodama 803號 08:21 發 → 09:37 抵（需 08:00 前退房）。班次取自 JR 東日本 2026/10 版時刻表，非出發當日，訂票時請以 JR 東海 EX／smartEX 確認。</div>
+        </div>
+        <div class="ti sub move">
+          <div class="tlab">10:48–13:12</div>
+          <div class="tttl"><span class="itag tflight">JR 特急ひだ 7號</span> 名古屋 10:48 → 高山 13:12</div>
+          <div class="tdsc">搭乘特急ひだ 7號直達高山（使用飛騨エリアフリーきっぷ），沿途欣賞飛驒川山谷景色。</div>
+          <div class="tipbox">⚠️ 原稿的「ひだ 5號 10:28 → 12:47」查不到這班車。依 JR 時刻表（2026/10/5 版），名古屋發的ひだ 為 09:39（5號）、10:48（7號）、11:43…，高山抵達分別為 12:14、13:12。本行程改搭 10:48 的 7號，劃位時請再以 JR 東海官網確認車次。</div>
+        </div>
+        <div class="ti sub food">
+          <div class="tlab">車上午餐</div>
+          <div class="tttl"><span class="itag tfood">午餐</span> 名古屋站 味噌豬排弁當＋天むす</div>
+          <div class="tdsc">候車時於站內弁當店購買味噌豬排類弁當（站內另有「みそかつ＆大えびフライ」類型，約 ¥980，以現場為準），再到 JR 名古屋高島屋 B1 的天むす專賣（10:00 開店）加買 5 個，上ひだ車上享用。弁當以豬排為主，整餐不會只有蝦。備案：抵達高山後於老街吃全熟飛驒牛串燒與醬油煎餅。</div>
+        </div>
+        <div class="ti shop">
+          <div class="tlab">13:20–13:50</div>
+          <div class="tttl">飯店寄放行李</div>
+          <div class="tdsc">抵達高山站後先前往 Hotel Kuretakeso Takayama Ekimae 寄放 28 吋大行李，展開輕裝慢遊。</div>
+        </div>
+        <div class="ti shrine">
+          <div class="tlab">13:50–17:00</div>
+          <div class="tttl"><span class="itag tshrine">高山古町家漫遊與陣屋巡禮</span></div>
+          <div class="tdsc">漫步三町傳統建築群保存區（上三之町）、宮川川堤，參觀日本唯一現存的江戶代官所「高山陣屋」。沿途品嚐全熟飛驒牛串燒及醬油煎餅，享受悠閒的秋日小鎮時光。</div>
+          <div class="okbox">💡 充裕休息可修復前五天連續移動的疲勞，為 D7 新穗高與 D8 上高地儲備充足體力。</div>
+        </div>
+        <div class="ti sub food">
+          <div class="tlab">14:30 甜點</div>
+          <div class="tttl"><span class="itag tfood">甜點</span> 茶乃芽（老街，冷凍草莓冰串）</div>
+          <div class="tdsc">營業 10:00–16:00（不定休），14:30 前後入店較保險。備案：高山布丁亭「雪國藍色布丁」。</div>
+        </div>
+        <div class="ti food">
+          <div class="tlab">晚餐 18:00</div>
+          <div class="tttl"><span class="itag tfood">頂級 A5 飛驒牛燒肉 / 壽喜燒</span></div>
+          <div class="tdsc">丸明 高山店（飛驒牛燒肉專賣，營業 11:00–21:00、L.O. 20:30，無休，週二可入）。原訂味藏天國每週二公休，D6 為週二，不去。備案：萬代角店（飛驒牛炭火焼／すき焼き定食，17:00–20:00 L.O.）、寿々や（朴葉みそステーキ定食，17:00–20:00）、房明（11:00–14:30、17:00–20:30，週一休）。</div>
+        </div>
+        <div class="ti hotel">
+          <div class="tlab">夜宿</div>
+          <div class="tttl">Hotel Kuretakeso Takayama Ekimae <span class="hb hida">高山 1/2晚</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-panel" id="p6">
+    <div class="dc">
+      <div class="dh">
+        <div>
+          <div class="dt">D7 — 10/28（週三） 🍁 新穗高雙層纜車（三段紅葉）＋ 飛驒熊牧場 ➔ 朴葉味噌</div>
+          <div class="ds">飛驒高山絕景 No.1 ｜ 2,156m三段紅葉絕景 ▸ 夜宿飛驒高山</div>
+        </div>
+        <div class="cbadge">🏔 飛驒絕景①</div>
+      </div>
+      <div class="tl">
+        <div class="ti sub shop">
+          <div class="tlab">06:50–07:30 早餐</div>
+          <div class="tttl"><span class="itag tshop">宮川朝市</span> 飛驒牛包子、玉子燒、五平餅</div>
+          <div class="tdsc">從飯店步行前往，約 07:00 開市，在這裡吃早餐並順便採買漬物與伴手禮，市場營業 07:00–12:00，從 JR 高山站步行約 10 分鐘。07:30 前回到高山濃飛巴士站搭 07:40；想多逛就搭下一班 08:40（10:16 抵新穗高，12:55 下山不變，山頂時間少約 1 小時）。備案：超商／高山站前麵包店；飯店自助早餐（¥1,500，06:30–09:30）。</div>
+        </div>
+        <div class="ti move">
+          <div class="tlab">07:40–12:30</div>
+          <div class="tttl"><span class="itag tbear">🍁 新穗高雙層纜車</span>（三段紅葉）</div>
+          <div class="tdsc">高山濃飛巴士站 5 號月台搭乘平湯・新穗高線巴士 (07:40發，免預約，持高山＆新穗高乘車券) 至新穗高纜車站 (09:16抵)。【下一班】錯過 07:40 的話，每小時一班：08:40 發（10:16 抵）、09:40 發（11:16 抵）；晚一班的話 12:55 下山不變，山頂時間少約 1 小時。搭乘日本唯一雙層纜車登上 2,156m 頂之森，欣賞三段紅葉絕景。纜車平日 08:30 起、最後下行 16:45，第 1 段每小時 :00／:30、第 2 段 :15／:45 發車，單程約 25 分鐘；來回 ¥3,800，不含在周遊券內，現場另付。</div>
+          <div class="infobox">ℹ️ 10/28 前後是新穗高頂之森（2,156m）楓紅的傳統高峰期，山頂已入深秋、山腰中段楓葉正盛，是三段紅葉中最值得優先安排的一天；山頂氣溫常僅個位數，務必攜帶保暖外套。</div>
+        </div>
+        <div class="ti sub food">
+          <div class="tlab">11:30–12:30 午餐＋甜點</div>
+          <div class="tttl"><span class="itag tfood">午餐</span> 纜車頂 Alpama 餐廳（飛驒牛可頌三明治）</div>
+          <div class="tdsc">備案：鍋平高原站食堂（飛驒豬炸豬排／熱烏龍麵）。飯後於山頂吃飛驒高原鮮奶霜淇淋當甜點。</div>
+        </div>
+        <div class="ti bear">
+          <div class="tlab">13:20–17:00</div>
+          <div class="tttl"><span class="itag tbear">奧飛驒熊牧場（奥飛騨クマ牧場）</span></div>
+          <div class="tdsc">12:55 在新穗高搭巴士，13:20 抵達「クマ牧場前」站（官方班表平湯 13:28 抵相符），步行約 5 分鐘到牧場。營業 08:00–17:00（4–11 月無休），可自行購買飼料餵食（¥100 起），無固定餵食場次。門票各來源多為 ¥1,100，只有一個來源寫 ¥1,400，預算先用 ¥1,400；最後入園為閉園前 30 分鐘；抱小熊拍照的日期要看官方 Instagram。</div>
+          <div class="tipbox">⚠️ 最晚下山的濃飛巴士（10/28）<br>・熊牧場前 17:20 發 → 平湯 17:28 抵、17:30 發 → 高山濃飛バスセンター 18:31 抵（新穗高 16:55 發的直通班）。<br>・17:05 前離園，走到站牌等車；這是往高山的最後一班，錯過就沒有巴士回高山（18:20 熊牧場前班只到平湯）。<br>・較早班次：熊牧場前 16:20 → 高山 17:31、15:20 → 16:31、14:20 → 15:31。<br>・依據：濃飛巴士官方班表（新穗高回程班次運行日欄標示 Daily，平日也運行）；官方警告班次可能嚴重延誤，道路狀況請預留緩衝，出發前再看官網。</div>
+        </div>
+        <div class="ti move">
+          <div class="tlab">備案（熊牧場要提早離開）</div>
+          <div class="tttl">平湯溫泉泡湯（ひらゆの森）</div>
+          <div class="tdsc">想泡湯就把熊牧場提早結束：搭熊牧場前 14:20 發的巴士（14:28 抵平湯），步行 3 分鐘到露天溫泉「ひらゆの森」（10:00–21:00，受付至 20:30，¥700，免預約），泡到 16:20，再搭平湯 16:30 往高山的巴士（17:31 抵）；若搭熊牧場前 15:20 班（15:28 抵平湯），則泡到 17:20 前，搭平湯 17:30（18:31 抵）。⚠️ 平湯往高山最晚是 17:30，泡湯務必在 17:20 前結束。D8 還有一次泡湯機會，D7 可以不泡。</div>
+        </div>
+        <div class="ti food">
+          <div class="tlab">晚餐 19:00</div>
+          <div class="tttl"><span class="itag tfood">飛驒鄉土料理＋朴葉味噌</span></div>
+          <div class="tdsc">18:31 回到高山後步行前往；三家都營業到 20:00，最後點餐時間未查到，建議 19:30 前入店。京や（在鄉定食、飛驒牛網燒；營業 11:00–14:00、17:00–20:00，週二公休，D7 為週三可入）。備案：寿々や（朴葉みそステーキ定食，17:00–20:00）、萬代角店（飛驒牛朴葉味噌定食，17:00–20:00 L.O.）。</div>
+        </div>
+        <div class="ti hotel">
+          <div class="tlab">夜宿</div>
+          <div class="tttl">飛驒高山市區飯店/民宿 <span class="hb hida">高山 2/2晚（明日退房）</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-panel" id="p7">
+    <div class="dc">
+      <div class="dh">
+        <div>
+          <div class="dt">D8 — 10/29（週四） 🌲 上高地黃金健行 ➔ 平湯泡湯 ➔ 特急ひだ 20號至名古屋</div>
+          <div class="ds">飛驒高山絕景 No.2 ｜ 7:40 早發 + 上高地仙境 + 平湯泡湯 ▸ 夜宿名古屋</div>
+        </div>
+        <div class="cbadge">🏔 飛驒絕景②</div>
+      </div>
+      <div class="tl">
+        <div class="ti food">
+          <div class="tlab">06:30–07:10</div>
+          <div class="tttl"><span class="itag tfood">早餐</span> 飯店自助早餐（¥1,500，06:30 供餐）</div>
+          <div class="tdsc">有飛驒牛朴葉味噌焼、手作豆腐等當地菜色，吃約 40 分鐘；不想吃就超商。備案：高山站前咖啡館烤吐司組合、超商起司火腿三明治。</div>
+        </div>
+        <div class="ti shop">
+          <div class="tlab">07:10–07:35</div>
+          <div class="tttl">退房、寄放大行李，走到高山濃飛バスセンター</div>
+          <div class="tdsc">大行李留在旅館，晚上回高山時再取，輕裝出發。</div>
+        </div>
+        <div class="ti move">
+          <div class="tlab">07:40–09:25</div>
+          <div class="tttl"><span class="itag tbear">濃飛巴士</span> 高山 → 平湯 → 上高地</div>
+          <div class="tdsc">07:40 高山發，08:38 抵平湯（官方班表，持飛騨エリアフリーきっぷ）；08:30 的上高地接駁已走，轉搭 09:00 發的接駁：大正池站 09:16、上高地 09:25 抵（官方班表）。此班與 D7 同為 07:40，兩天早上都要提早出發。</div>
+          <div class="infobox">ℹ️ 官方班表：平湯 → 上高地平日 06:30–17:00 每 30 分鐘一班（整點與 30 分發車），免預約；單程約 25 分鐘，單程 ¥1,500、來回 ¥2,800。上高地僅能搭巴士或計程車進入。</div>
+        </div>
+        <div class="ti move">
+          <div class="tlab">09:25–14:30</div>
+          <div class="tttl"><span class="itag tbear">🌲 上高地黃金健行</span>（絕景重點）</div>
+          <div class="tdsc">河童橋周邊、田代池、穗高橋一帶自由漫步，約 5 小時（含午餐與甜點）。若想從大正池走回河童橋，可在 09:16 的大正池站提早下車。</div>
+          <div class="tipbox">⚠️ 上高地私家車管制，僅能經平湯或澤渡轉乘接駁巴士進入；10月下旬起水溫已低，河童橋周邊白樺開始轉黃，晨間氣溫可能接近 0°C，請留意保暖與路面結冰。11 月中旬起上高地將封閉至隔年 4 月，此行程剛好卡在封山前的尾聲。</div>
+        </div>
+        <div class="ti sub food">
+          <div class="tlab">12:00–13:00 午餐</div>
+          <div class="tttl"><span class="itag tfood">午餐</span> 五千尺酒店 河童食堂（山賊燒炸雞定食／信州鮭魚定食）</div>
+          <div class="tdsc">營業 10:00–15:00（L.O. 14:30），開山期間無休。備案：上高地帝國飯店 Dining Room（飛驒牛咖哩飯／蛋包飯，時間緊就不等位）、大正池飯店食堂（飛驒牛三明治／山菜烏龍麵）。</div>
+        </div>
+        <div class="ti sub food">
+          <div class="tlab">13:30 甜點</div>
+          <div class="tttl"><span class="itag tfood">甜點</span> 五千尺酒店 5HORN Cafe（信州蘋果派＋手沖咖啡）</div>
+          <div class="tdsc">安排在 14:30 返程接駁前，勿拖到末班風險時段。</div>
+        </div>
+        <div class="ti move">
+          <div class="tlab">14:30–15:25｜返程接駁</div>
+          <div class="tttl"><span class="itag tbear">上高地接駁</span> 上高地巴士總站 → 平湯</div>
+          <div class="tdsc">上高地 → 平湯平日 07:00–17:30 每 30 分鐘一班（整點與 30 分發車），約 25 分鐘到平湯；大正池站在上高地發車後約 7 分鐘經過。下面兩個選擇二選一；旺季建議提早 15 分鐘到站排隊。</div>
+        </div>
+        <div class="ti branch">
+          <div class="tlab">14:30 發 → 14:55 抵平湯｜泡湯 15:00–16:20</div>
+          <div class="tttl"><span class="itag btag-a">選擇 A</span> ひらゆの森 泡湯約 80 分鐘</div>
+          <div class="tdsc">泡湯時間最充裕。平湯巴士總站步行約 3 分鐘，10:00–21:00（受付至 20:30），¥700，10 月沒有維修休館。毛巾要自備或現場購買（小毛巾 ¥200、浴巾 ¥500，沒有租借），有鎖置物櫃 ¥100，洗髮精、沐浴乳、吹風機免費。16:20 前離開，趕 16:30 的巴士。</div>
+        </div>
+        <div class="ti branch b">
+          <div class="tlab">15:00 發 → 15:25 抵平湯｜泡湯 15:30–16:20</div>
+          <div class="tttl"><span class="itag btag-b">選擇 B</span> 在上高地多待 30 分鐘，泡湯約 50 分鐘</div>
+          <div class="tdsc">泡湯時間較短，但上高地多逛 30 分鐘。16:20 前離開，趕 16:30 的巴士。不建議搭 15:30 或更晚的接駁：16:00 發 → 16:25 抵，只剩 5 分鐘轉車，風險高。</div>
+          <div class="infobox">ℹ️ 不泡湯：搭 15:30 的平湯→高山巴士（16:31 抵），可多出約 1 小時逛伴手禮、喝咖啡；平湯巴士總站有免費足湯（09:00–17:00）、麵包店與伴手禮店。</div>
+        </div>
+        <div class="ti move">
+          <div class="tlab">16:30–17:31</div>
+          <div class="tttl"><span class="itag tbear">濃飛巴士</span> 平湯温泉 → 高山濃飛バスセンター</div>
+          <div class="tdsc">16:30 發、17:31 抵（官方班表，每日運行，持飛騨エリアフリーきっぷ；請先到平湯窗口確認上車方式）。官方警告班次可能延誤，行程已留約 77 分鐘緩衝。</div>
+        </div>
+        <div class="ti shop">
+          <div class="tlab">17:31–17:50</div>
+          <div class="tttl">回旅館取行李＋走往晚餐</div>
+          <div class="tdsc">行李寄放在旅館，回高山後先取行李，再去用餐。</div>
+        </div>
+        <div class="ti food">
+          <div class="tlab">晚餐 17:50–18:20</div>
+          <div class="tttl"><span class="itag tfood">萬代角店</span>（飛驒牛炭火焼／すき焼き定食）</div>
+          <div class="tdsc">營業 17:00–20:00（L.O.），17:50 入店，18:20 前離店。備案：寿々や（17:00–20:00，朴葉みそステーキ定食）、房明（11:00–14:30、17:00–20:30；10/29 為週四，營業）。最晚 18:35 要到高山站月台。</div>
+        </div>
+        <div class="ti move">
+          <div class="tlab">18:48–21:03</div>
+          <div class="tttl"><span class="itag tflight">JR 特急ひだ 20號</span> 高山 18:48 → 名古屋 21:03（指定席）</div>
+          <div class="tdsc">18:48 發車，是高山往名古屋的最後一班特急（已核實：高山 18:48 發、名古屋 21:03 抵）。抵達後搭東山線到榮站，約 21:30 入住；請先向飯店確認可以晚入住。</div>
+          <div class="infobox">ℹ️ 原稿的「17:34 發、20:02 抵」查不到這班車，已更正。</div>
+        </div>
+        <div class="ti hotel">
+          <div class="tlab">夜宿</div>
+          <div class="tttl">名古屋榮舒適飯店（榮商圈，名古屋站搭地下鐵東山線前往） <span class="hb">名古屋 1/3晚</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-panel" id="p8">
+    <div class="dc">
+      <div class="dh">
+        <div>
+          <div class="dt">D9 — 10/30（週五） 東山動植物園「吹雪」全日 ➔ 熱田神宮</div>
+          <div class="ds">衝北極熊吹雪 → 熱田神宮御朱印 ▸ 夜宿名古屋</div>
+        </div>
+        <div class="cbadge">北極熊吹雪</div>
+      </div>
+      <div class="tl">
+        <div class="ti sub food">
+          <div class="tlab">07:40–08:15 早餐</div>
+          <div class="tttl"><span class="itag tfood">早餐</span> 客美多咖啡 名古屋榮店（小倉紅豆奶油吐司＋熱咖啡）</div>
+          <div class="tdsc">備案：喫茶 Compal（招牌炸蝦三明治可點）。</div>
+        </div>
+        <div class="ti move">
+          <div class="tlab">08:30–08:50</div>
+          <div class="tttl"><span class="itag tbear">地下鐵東山線</span></div>
+          <div class="tdsc">飯店位於榮商圈，直接由榮站搭乘地下鐵東山線至東山公園站，直奔ホッキョクグマ館。</div>
+        </div>
+        <div class="ti bear">
+          <div class="tlab">09:00–13:00</div>
+          <div class="tttl"><span class="itag tbear">東山動植物園</span> 吹雪（ふぶき）</div>
+          <div class="tdsc">觀察活躍的北極熊「吹雪」。</div>
+          <div class="infobox">ℹ️ 東山動植物園週一休園，10/30 為週五可入園；北極熊固定餵食時間官方未公布，以園方當日公告為準。</div>
+        </div>
+        <div class="ti shrine">
+          <div class="tlab">13:00–15:30</div>
+          <div class="tttl"><span class="itag tshrine">熱田神宮</span>（日本三大神宮）</div>
+          <div class="tdsc">搭東山線至本山站轉名城線至熱田神宮西站 (13:30抵)。參拜熱田神宮領取御朱印。</div>
+        </div>
+        <div class="ti sub food">
+          <div class="tlab">13:30 午餐</div>
+          <div class="tttl"><span class="itag tfood">午餐</span> 宮きしめん（平打寬烏龍麵）</div>
+          <div class="tdsc">備案：馬喰一代 名古屋店（飛驒牛燒肉午間定食）。あつた蓬莱軒是名店但常大排隊，且晚餐已是鰻魚，不列入。</div>
+        </div>
+        <div class="ti shop">
+          <div class="tlab">15:30–17:00</div>
+          <div class="tttl"><span class="itag tshop">郵局購買 JTTP 收入印紙 ¥4,000</span></div>
+          <div class="tdsc">請於今天（週五）以現金購買面額合計 ¥4,000 的收入印紙，供 D11 二次審查繳費（窗口不收現金，僅收印紙；手續費 ¥4,000 為 2025/4/1 起的標準）。名古屋中央郵便局（JP Tower 名古屋內，名古屋站直結）：郵便窗口平日 09:00–19:00、土日祝 –18:00；ゆうゆう窗口平日 07:00–21:00、土日祝 –18:00。週末也營業，所以 D11（週日）早上也可在這裡補買當備案，但仍建議今天先買好。營業時間來自不動產網站，請以日本郵便官網為準。</div>
+        </div>
+        <div class="ti sub food">
+          <div class="tlab">16:30 甜點</div>
+          <div class="tttl"><span class="itag tfood">甜點</span> Piyorin Shop（JR 名古屋站，小雞布丁蛋糕）</div>
+          <div class="tdsc">辦完郵局順路外帶。備案：HARBS 榮本店千層蛋糕（回榮商圈途中）。</div>
+        </div>
+        <div class="ti food">
+          <div class="tlab">晚餐 18:00</div>
+          <div class="tttl"><span class="itag tfood">ひつまぶし備長 鰻魚三吃</span></div>
+          <div class="tdsc">ひつまぶし備長 ESCA／名駅店（炭火香氣酥脆關西風鰻魚三吃；11:00–15:30、17:00–22:00，L.O. 21:00，無休）。備案：炭焼 うな富士 名駅店、麵屋獅子丸（泡系雞白湯拉麵）。</div>
+        </div>
+        <div class="ti hotel">
+          <div class="tlab">夜宿</div>
+          <div class="tttl">名古屋榮舒適飯店 <span class="hb">名古屋 2/3晚</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-panel" id="p9">
+    <div class="dc">
+      <div class="dh">
+        <div>
+          <div class="dt">D10 — 10/31（週六） 樂高樂園或市區採購 ➔ 萬聖夜活動與晚餐</div>
+          <div class="ds">白天彈性安排（可順道取眼鏡） → 樂高樂園「ハロウィン・ナイト」或榮商圈晚餐 ▸ 夜宿名古屋</div>
+        </div>
+        <div class="cbadge">彈性自由日</div>
+      </div>
+      <div class="tl">
+        <div class="ti sub food">
+          <div class="tlab">08:00–08:40 早餐</div>
+          <div class="tttl"><span class="itag tfood">早餐</span> 星乃咖啡館 名古屋站店（厚鬆餅＋烤吐司咖啡組合）</div>
+          <div class="tdsc">備案：Vie de France 名古屋站店（起司可頌套餐）。</div>
+        </div>
+        <div class="ti shop">
+          <div class="tlab">彈性</div>
+          <div class="tttl"><span class="itag tshop">OWNDAYS 名古屋站 ESCA 店取眼鏡</span></div>
+          <div class="tdsc">D1 已於名古屋站 ESCA 店送件，今天是名古屋期間唯一沒有預約卡點的一天，順路取回眼鏡最不影響行程。</div>
+        </div>
+        <div class="ti move">
+          <div class="tlab">09:00–16:00</div>
+          <div class="tttl">樂高樂園（LEGOLAND）或市區採購</div>
+          <div class="tdsc">若去樂高樂園：名古屋站搭乘あおなみ線 (09:00發) 至金城埠頭站 (09:24抵，24 分鐘)。或於榮商圈市區採購。</div>
+        </div>
+        <div class="ti sub food">
+          <div class="tlab">12:00 午餐</div>
+          <div class="tttl"><span class="itag tfood">午餐</span> 名古屋站 ESCA 和幸 炸豬排（市區採購方案）</div>
+          <div class="tdsc">備案：JR Central Towers 12F 牛舌（利久／伊達）；想吃炸蝦可選 ESCA 的海老どて食堂（營業資訊未查證，並搭配其他餐點）。若去樂高樂園，午餐直接在園內餐廳解決。</div>
+        </div>
+        <div class="ti sub food">
+          <div class="tlab">15:00 甜點</div>
+          <div class="tttl"><span class="itag tfood">甜點</span> HARBS 榮本店（千層水果蛋糕）</div>
+          <div class="tdsc">備案：Piyorin Shop（JR 名古屋站）。</div>
+        </div>
+        <div class="ti night">
+          <div class="tlab">18:00–21:00</div>
+          <div class="tttl"><span class="itag tnight">樂高樂園「ハロウィン・ナイト」（限定 10/30・10/31・11/1）</span></div>
+          <div class="tdsc">今天剛好是這場夜間限定萬聖活動的舉辦日之一：閉園後開放約30種夜間版遊樂設施、迷你樂園夜景、巨型南瓜裝置與限定歌舞秀。需另購當日票（2026 年 10/30–11/1 確認舉辦；2025 年夜間票 ¥2,000、每日限量 3,000 張，2026 年票價與名額需上官網確認），活動主打「仮裝兒童」的氛圍，如果想要成人取向、逛街吃飯的萬聖夜，改走榮商圈／久屋大通公園也是常見選擇。名古屋市近兩年萬聖夜會封閉綠洲21部分區域防止群聚，並非開放聚會現場，若去榮商圈純吃飯逛街不受影響。</div>
+        </div>
+        <div class="ti food">
+          <div class="tlab">晚餐 18:30</div>
+          <div class="tttl"><span class="itag tfood">鳥開總本家 名古屋地雞</span></div>
+          <div class="tdsc">鳥開總本家（名古屋地雞親子丼/手羽先）。若選擇樂高樂園ハロウィン・ナイト，晚餐可改為園內輕食或提前於名古屋站用餐。備案：雞三和 名古屋站店、味仙 JR 名古屋站店、スガキヤ。</div>
+        </div>
+        <div class="ti hotel">
+          <div class="tlab">夜宿</div>
+          <div class="tttl">名古屋榮舒適飯店 <span class="hb">名古屋 3/3晚（最後一晚）</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-panel" id="p10">
+    <div class="dc">
+      <div class="dh">
+        <div>
+          <div class="dt">D11 — 11/01（週日） 地下街採買 ➔ 中部國際機場（NGO）辦理 JTTP ➔ 返台</div>
+          <div class="ds"><span class="itag tflight">JX1321</span> 名古屋 16:10 → 台中 18:30 ▸ μ-SKY 赴機場處理 JTTP</div>
+        </div>
+        <div class="cbadge">完美收官</div>
+      </div>
+      <div class="tl">
+        <div class="ti sub food">
+          <div class="tlab">08:30–09:15 早餐</div>
+          <div class="tttl"><span class="itag tfood">早餐</span> Doutor／Starbucks 名古屋站店（火腿起司可頌＋拿鐵）</div>
+          <div class="tdsc">備案：BOUL'ANGE 名古屋店（現烤可頌＋美式）。</div>
+        </div>
+        <div class="ti shop">
+          <div class="tlab">09:30–12:00</div>
+          <div class="tttl"><span class="itag tshop">名古屋站地下街採買</span></div>
+          <div class="tdsc">退房後於地下街（ESCA / Gate Walk）採買伴手禮（手羽先醬汁、外郎餅）。</div>
+        </div>
+        <div class="ti sub move">
+          <div class="tlab">12:19–約12:47</div>
+          <div class="tttl">名鐵特急 μ-SKY（12:19發；備案 12:49發）</div>
+          <div class="tdsc">名鐵名古屋站直達中部國際機場站（約 28 分鐘，約 12:47 抵；全車指定席，運賃 ¥890＋μ-SKY 指定席 ¥360）。備案 12:49 發 → 約 13:17 抵，但 JTTP 時間會變緊。發車時刻取自駅探平日班表（11/1 為週日），出發前請在名鐵官網再確認。</div>
+        </div>
+        <div class="ti move">
+          <div class="tlab">13:10–13:40</div>
+          <div class="tttl">星宇 JX1321 報到托運</div>
+          <div class="tdsc">T1 辦理報到與行李托運。</div>
+        </div>
+        <div class="ti food">
+          <div class="tlab">13:40–14:15</div>
+          <div class="tttl"><span class="itag tfood">世界の山ちゃん 名古屋手羽先</span></div>
+          <div class="tdsc">4 樓 Sky Town 享用名物炸雞翅。餐廳位於安檢前，請先吃完再入關。備案：機場 4F 矢場とん／雞三和、4F 洋食漢堡排餐廳。若想吃甜點，可在 14:15 前於 4F 外帶西條園抹茶聖代，但以不壓縮 JTTP 時間為先。</div>
+        </div>
+        <div class="ti shop">
+          <div class="tlab">14:15–15:20</div>
+          <div class="tttl">安檢 ➔ 出境審查場辦理 <span class="itag tflight">JTTP 二次審查</span></div>
+          <div class="tdsc">通過安全檢查後，至國際線出境審查場的 JTTP 窗口辦理二次審查（核對資料、按指紋、拍照並領取卡片），告知承辦人員班機時間 16:10。現場作業約 10–50 分鐘，視排隊而定，故預留約 1 小時。</div>
+          <div class="tipbox">⚠️ 須攜帶：護照、初審通過信（含申請編號，建議列印）、申請時登錄的白金級以上信用卡、收入印紙 ¥4,000（D9 於郵局購買；窗口不收現金）。入關後無法再回到印紙販售處，務必在安檢前備齊。</div>
+        </div>
+        <div class="ti move">
+          <div class="tlab">15:20–15:40</div>
+          <div class="tttl">前往登機門候機</div>
+          <div class="tdsc">登機約 15:35–15:40 開始，請勿拖延。</div>
+        </div>
+        <div class="ti move">
+          <div class="tlab">16:10 起飛</div>
+          <div class="tttl">星宇 JX1321 名古屋 (NGO) 16:10 → 台中 (RMQ) 18:30</div>
+          <div class="tdsc">搭機返台，完美收官 11 天東海道巡禮！</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="bears" class="section">
+  <div class="beargrp">
+    <h3>🌊 濱松・濱松市動物園 ｜ D2 · 10/23</h3>
+    <div class="bearrow"><div class="bearnm">雪（ゆき）</div><div class="bearjp">全日守候北極熊「雪」</div><div class="bearnote">09:00 開園・11:00 進食</div></div>
+  </div>
+  <div class="beargrp">
+    <h3>🔵 靜岡・日本平動物園 ｜ D4 · 10/25</h3>
+    <div class="bearrow"><div class="bearnm">羅西（ロッシー）</div><div class="bearjp">猛獸館 299 圓形觀察筒</div><div class="bearnote">全日觀察</div></div>
+    <div class="bearrow"><div class="bearnm">香草（バニラ）</div><div class="bearjp">水中隧道看游泳、頭頂游過視角</div><div class="bearnote">全日觀察</div></div>
+  </div>
+  <div class="beargrp hida">
+    <h3>🏔️ 飛驒・奧飛驒熊牧場（奥飛騨クマ牧場）｜ D7 · 10/28</h3>
+    <div class="bearrow"><div class="bearnm">棕熊・黑熊</div><div class="bearjp">近距離觀察棕熊與黑熊，自行購買飼料餵食（無固定場次）</div><div class="bearnote">D7 下午</div></div>
+  </div>
+  <div class="beargrp">
+    <h3>🏙️ 名古屋・東山動植物園 ｜ D9 · 10/30</h3>
+    <div class="bearrow"><div class="bearnm">吹雪（ふぶき）</div><div class="bearjp">ホッキョクグマ館觀察活躍北極熊</div><div class="bearnote">09:00 入場</div></div>
+  </div>
+  <div style="background:var(--ice);border-radius:var(--r-sm);padding:12px 14px;font-size:.82rem;color:var(--blue);margin-top:4px;font-weight:700;border:1px solid rgba(18,83,147,.2);">
+    🐻‍❄️ 北極熊 4 隻：<strong>雪・羅西・香草・吹雪</strong> × 3 座動物園<br>🐻 棕熊・黑熊：奧飛驒熊牧場（餵食體驗）
+  </div>
+</div>
+
+<div id="transport" class="section">
+  <div class="bsec">
+    <h3>🚗 全程交通一覽</h3>
+    <table class="btable">
+      <thead><tr><th>路段</th><th>金額（円）</th></tr></thead>
+      <tbody>
+        <tr class="sub"><td colspan="2">D1</td></tr>
+        <tr><td>神戶機場→三宮→大阪難波（PortLiner＋阪神，Apple Suica 扣款，約）</td><td>700</td></tr>
+        <tr><td>近鐵火鳥號 Premium 特急費（已線上結清）</td><td>2,830</td></tr>
+        <tr><td>近鐵 大阪難波→名古屋 基本運賃（Suica 扣款，約）</td><td>2,410</td></tr>
+        <tr><td>新幹線 名古屋→濱松 指定席</td><td>5,040</td></tr>
+        <tr><td>D2 濱松市區／動物園公車往返（約）</td><td>1,000</td></tr>
+        <tr class="sub"><td colspan="2">D2 以後</td></tr>
+        <tr><td>D6–D8 JR 飛騨エリアフリーきっぷ（名古屋↔高山來回＋濃飛巴士引換券；新穗高纜車另計）</td><td>12,370</td></tr>
+        <tr><td>D3 濱松→靜岡 新幹線 指定席</td><td>2,220</td></tr>
+        <tr><td>D3 靜岡⇄燒津 往返（花火，在來線無指定席）</td><td>760</td></tr>
+        <tr><td>D4 靜岡⇄熱海 新幹線 往返 指定席（花火）</td><td>5,680</td></tr>
+        <tr><td>D4 靜鐵巴士 靜岡⇄日本平動物園 往返（約）</td><td>1,180</td></tr>
+        <tr><td>D6 靜岡→名古屋 新幹線 指定席（轉乘飛騨エリアフリーきっぷ前）</td><td>6,470</td></tr>
+        <tr><td>D8 上高地接駁（平湯⇄上高地 來回；高山⇄平湯以引換券搭乘）</td><td>2,800</td></tr>
+        <tr><td>D11 名鐵 名古屋→機場（運賃 ¥890＋μ-SKY 指定席 ¥360）</td><td>1,250</td></tr>
+        <tr><td>全程其餘市區地下鐵／公車備用</td><td>1,020</td></tr>
+        <tr class="tot"><td>交通小計（單人）</td><td>45,730</td></tr>
+      </tbody>
+    </table>
+    <div class="infobox">ℹ️ 新幹線費用皆為指定席計價（比自由席每段固定貴約¥530）；巴士類（濃飛巴士、名鐵μ-SKY）本來就是全車指定席。D1 全程以 Apple Suica 感應進出站，請事先加值足夠金額。</div>
+  </div>
+  <div class="bsec">
+    <h3>🚄 車次總覽（訂票對照表）</h3>
+    <table class="btable">
+      <thead><tr><th>路段</th><th>車次／班次</th><th>發車</th><th>抵達</th></tr></thead>
+      <tbody>
+        <tr class="sub"><td colspan="4">D1</td></tr>
+        <tr><td>神戶機場→大阪難波</td><td>PortLiner＋阪神電車（Suica）</td><td>13:10</td><td>14:30</td></tr>
+        <tr><td>大阪難波→近鐵名古屋</td><td>近鐵特急火鳥號（ひのとり 500列車）Premium 7A</td><td>15:00</td><td>17:08</td></tr>
+        <tr><td>名古屋→濱松</td><td>新幹線ひかり718號（備案：こだま846號 18:38→19:21）</td><td>18:43</td><td>19:13</td></tr>
+        <tr class="sub"><td colspan="4">D3</td></tr>
+        <tr><td>濱松→靜岡</td><td>新幹線こだま816號（備案：814號 11:25→11:52）</td><td>11:58</td><td>12:23</td></tr>
+        <tr><td>靜岡→燒津</td><td>JR東海道本線普通列車</td><td>17:21</td><td>17:33</td></tr>
+        <tr><td>燒津→靜岡</td><td>電車（時刻依現場公告）</td><td>約20:40</td><td>約20:52</td></tr>
+        <tr class="sub"><td colspan="4">D4</td></tr>
+        <tr><td>靜岡→日本平動物園</td><td>靜鐵巴士 日本平線</td><td>08:24</td><td>08:46</td></tr>
+        <tr><td>日本平動物園→靜岡駅前</td><td>靜鐵巴士 日本平線</td><td>16:35</td><td>17:07</td></tr>
+        <tr><td>靜岡→熱海</td><td>新幹線こだま836號（備案：838號 17:56→18:31）</td><td>17:26</td><td>18:01</td></tr>
+        <tr><td>熱海→靜岡</td><td>新幹線こだま909號（終點靜岡；更早的857號 21:13→21:46 較趕）</td><td>22:04</td><td>22:36</td></tr>
+        <tr class="sub"><td colspan="4">D6</td></tr>
+        <tr><td>靜岡→名古屋</td><td>新幹線ひかり703號</td><td>09:07</td><td>10:01</td></tr>
+        <tr><td>靜岡→名古屋（替代）</td><td>新幹線こだま805號（更早：803號 08:21→09:37）</td><td>08:53</td><td>10:06</td></tr>
+        <tr><td>名古屋→高山</td><td>JR特急ひだ7號（原稿 10:28 發的班次查無；5號為 09:39→12:14）</td><td>10:48</td><td>13:12</td></tr>
+        <tr class="sub"><td colspan="4">D7</td></tr>
+        <tr><td>高山→新穗高纜車站</td><td>平湯・新穗高線巴士（免預約；下一班 08:40→10:16、09:40→11:16）</td><td>07:40</td><td>09:16</td></tr>
+        <tr><td>新穗高→熊牧場前</td><td>平湯・新穗高線巴士（其他班次 13:46、14:55、15:55 發）</td><td>12:55</td><td>13:20</td></tr>
+        <tr><td>熊牧場前→高山</td><td>平湯・新穗高線巴士（末班，錯過無車；前一班 16:20→17:31）</td><td>17:20</td><td>18:31</td></tr>
+        <tr class="sub"><td colspan="4">D8</td></tr>
+        <tr><td>高山→平湯溫泉</td><td>濃飛巴士（官方時刻表，飛騨エリアフリーきっぷ）</td><td>07:40</td><td>08:38</td></tr>
+        <tr><td>平湯→上高地</td><td>上高地接駁巴士（官方時刻表，每 30 分一班；08:30 班趕不上）</td><td>09:00</td><td>09:25</td></tr>
+        <tr><td>上高地→平湯</td><td>上高地接駁巴士（官方時刻表）選擇 A：14:30；選擇 B：15:00</td><td>14:30／15:00</td><td>14:55／15:25</td></tr>
+        <tr><td>平湯→高山</td><td>濃飛巴士（官方時刻表，每日運行；不泡湯可搭 15:30→16:31）</td><td>16:30</td><td>17:31</td></tr>
+        <tr><td>高山→名古屋</td><td>JR特急ひだ20號（最後一班特急，已核實）</td><td>18:48</td><td>21:03</td></tr>
+        <tr class="sub"><td colspan="4">D11</td></tr>
+        <tr><td>名古屋→中部國際機場</td><td>名鐵特急 μ-SKY（全車指定席；備案 12:49→約13:17）</td><td>12:19</td><td>約12:47</td></tr>
+      </tbody>
+    </table>
+    <div class="infobox">ℹ️ 新幹線與名鐵班次取自 JR 東日本 2026/10 版時刻表與駅探時刻表（取樣日 10/7、10/11、10/16，並非各行程當日；こだま 的發車分鐘數每日基本固定，但仍請確認該日有開）。訂票時請以 JR 東海 EX／smartEX、名鐵官網為準。巴士時刻表依濃飛巴士官方網站（2026/4/1 改正版），官方警告班次可能嚴重延誤，出發前請再看官網。</div>
+  </div>
+  <div class="bsec">
+    <h3>🎫 票券／通行證使用重點</h3>
+    <div class="sopitem"><div class="sopkey">Apple Suica</div><div class="sopval">D1 神戶機場至名古屋全程感應進出站（PortLiner、阪神、近鐵）；火鳥號特急費已線上結清，無需另購實體票。D3、D4 花火散場時燒津站、熱海站會湧入人潮並實施進站管制，請提前加值足夠金額，或先買好回程車票。</div></div>
+    <div class="sopitem"><div class="sopkey">飛騨エリアフリーきっぷ</div><div class="sopval">名古屋站換領（¥12,370、3 日有效，D6–D8 剛好用完，不可延期）。附濃飛巴士引換券，二選一：白川郷來回，或「高山＆新穗高フリー乗車券」；本行程選後者，到高山濃飛バスセンター換票（高山⇄平湯⇄新穗高的濃飛巴士乘車自由；Veltra 販售版本為 2 日有效，JR 版有效天數請換票時確認）。新穗高纜車票（¥3,800）與上高地接駁（來回 ¥2,800）不含，需另付。換票時建議一併劃好 D6 去程ひだ7號與 D8 回程ひだ20號的指定席（10月下旬賞楓旺季容易額滿）。</div></div>
+  </div>
+</div>
+
+<div id="budget" class="section">
+  <div class="exrate">參考匯率：1 台幣 ≈ 4.6 日圓（實際依匯兌當日為準）｜ 機票、住宿已訂為實際金額，其餘為單人預估</div>
+
+  <div class="bsec">
+    <h3>✈️ 機票費用（已訂，星宇航空）</h3>
+    <table class="btable">
+      <thead><tr><th>航段</th><th>金額</th></tr></thead>
+      <tbody>
+        <tr><td>台中 → 神戶（JX306）</td><td>NT$4,657</td></tr>
+        <tr><td>名古屋 → 台中（JX1321，16:10起飛）</td><td>¥38,495（約 NT$7,934.5）</td></tr>
+        <tr class="sub"><td>機票小計</td><td>約 NT$12,592</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="bsec">
+    <h3>🏨 住宿費用（已訂）</h3>
+    <table class="btable">
+      <thead><tr><th>飯店名稱</th><th>入住日期</th><th>晚數</th><th>價格（TWD）</th></tr></thead>
+      <tbody>
+        <tr><td>Kitanoniwa The Kuretakeso</td><td>10/22 – 10/24</td><td>2 晚</td><td>$3,030</td></tr>
+        <tr><td>HOTEL GRAND HILLS SHIZUOKA</td><td>10/24 – 10/26</td><td>2 晚</td><td>$4,974</td></tr>
+        <tr><td>HOTEL GRAND HILLS SHIZUOKA</td><td>10/26 – 10/27</td><td>1 晚</td><td>$2,134</td></tr>
+        <tr><td>Hotel Kuretakeso Takayama Ekimae</td><td>10/27 – 10/29</td><td>2 晚</td><td>$5,251</td></tr>
+        <tr><td>名古屋榮舒適飯店</td><td>10/29 – 11/01</td><td>3 晚</td><td>$5,906</td></tr>
+        <tr class="sub"><td colspan="2">總計 10/22 – 11/01</td><td>10 晚</td><td>$21,295</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="bsec">
+    <h3>🎫 交通票券預算</h3>
+    <table class="btable">
+      <thead><tr><th>項目</th><th>金額（円）</th></tr></thead>
+      <tbody>
+        <tr class="sub"><td colspan="2">D1</td></tr>
+        <tr><td>神戶機場→三宮→大阪難波（PortLiner＋阪神，Suica 扣款，約）</td><td>700</td></tr>
+        <tr><td>近鐵火鳥號 Premium 特急費（¥2,830 ≈ NT$570，已結清）</td><td>2,830</td></tr>
+        <tr><td>近鐵 大阪難波→名古屋 基本運賃（Suica 扣款，約）</td><td>2,410</td></tr>
+        <tr><td>新幹線 名古屋→濱松 指定席</td><td>5,040</td></tr>
+        <tr><td>D2 濱松市區／動物園公車往返（約）</td><td>1,000</td></tr>
+        <tr class="sub"><td colspan="2">D2 以後</td></tr>
+        <tr><td>D6–D8 JR 飛騨エリアフリーきっぷ（名古屋↔高山來回＋濃飛巴士引換券；新穗高纜車另計）</td><td>12,370</td></tr>
+        <tr><td>D3 濱松→靜岡 新幹線 指定席</td><td>2,220</td></tr>
+        <tr><td>D3 靜岡⇄燒津 往返（花火，在來線無指定席）</td><td>760</td></tr>
+        <tr><td>D4 靜岡⇄熱海 新幹線 往返 指定席（花火）</td><td>5,680</td></tr>
+        <tr><td>D4 靜鐵巴士 靜岡⇄日本平動物園 往返（約）</td><td>1,180</td></tr>
+        <tr><td>D6 靜岡→名古屋 新幹線 指定席（轉乘飛騨エリアフリーきっぷ前）</td><td>6,470</td></tr>
+        <tr><td>D8 上高地接駁（平湯⇄上高地 來回；高山⇄平湯以引換券搭乘）</td><td>2,800</td></tr>
+        <tr><td>D11 名鐵 名古屋→機場（運賃 ¥890＋μ-SKY 指定席 ¥360）</td><td>1,250</td></tr>
+        <tr><td>全程其餘市區地下鐵／公車備用</td><td>1,020</td></tr>
+        <tr class="tot"><td>交通小計（單人，約 NT$9,940）</td><td>45,730</td></tr>
+      </tbody>
+    </table>
+    <div class="infobox">ℹ️ 新幹線費用皆為指定席計價（比自由席每段固定貴約¥530）；巴士類（濃飛巴士、名鐵μ-SKY）本來就是全車指定席。</div>
+  </div>
+
+  <div class="bsec">
+    <h3>🐻 動物園與景點門票</h3>
+    <table class="btable">
+      <thead><tr><th>項目</th><th>金額（円）</th></tr></thead>
+      <tbody>
+        <tr><td>濱松市動物園</td><td>500</td></tr>
+        <tr><td>日本平動物園</td><td>620</td></tr>
+        <tr><td>奧飛驒熊牧場</td><td>1,400</td></tr>
+        <tr><td>東山動植物園（2026/10/1 起調漲）</td><td>800</td></tr>
+        <tr><td>久能山東照宮＋日本平纜車</td><td>2,000</td></tr>
+        <tr><td>JTTP 二次審查收入印紙（D9 郵局購買）</td><td>4,000</td></tr>
+        <tr><td>新穗高雙層纜車（第1＋第2段往返，不含在周遊券內）</td><td>3,800</td></tr>
+        <tr class="sub"><td>門票小計</td><td>約 13,120</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="bsec">
+    <h3>🎟️ 動物園年票價格參考（不計入總額，預算以當日票計算）</h3>
+    <table class="btable">
+      <thead><tr><th>動物園</th><th>年票（円）</th><th>當日票（円）</th></tr></thead>
+      <tbody>
+        <tr><td>濱松市動物園</td><td>1,500</td><td>500</td></tr>
+        <tr><td>日本平動物園</td><td>2,510</td><td>620</td></tr>
+        <tr><td>東山動植物園</td><td>3,200</td><td>800</td></tr>
+        <tr><td>奧飛驒熊牧場</td><td>未查到</td><td>1,400</td></tr>
+      </tbody>
+    </table>
+    <div class="infobox">ℹ️ 需要同日再入園（例如 D2 出園吃鰻魚再回來）才需要買年票；年票是否放行同日再入園，請在入口向工作人員確認。</div>
+  </div>
+
+  <div class="bsec">
+    <h3>🍱 餐飲預算（估）</h3>
+    <table class="btable">
+      <thead><tr><th>項目</th><th>金額（円）</th></tr></thead>
+      <tbody>
+        <tr><td>正餐（早/午/晚，11天×約2,000円）</td><td>約 44,000</td></tr>
+        <tr><td>飛驒牛燒肉等升級晚餐（3〜4次加碼）</td><td>約 12,000</td></tr>
+        <tr><td>每日下午甜點、飲料、零食（11天×約900円）</td><td>約 10,000</td></tr>
+        <tr class="sub"><td>餐飲小計</td><td>約 66,000</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+    <div class="bsec">
+    <h3>🟠 彈性支出（視情況使用，底色標示；不含在上方合計）</h3>
+    <table class="btable">
+      <thead><tr><th>項目</th><th>金額（円）</th></tr></thead>
+      <tbody>
+        <tr class="flex"><td>D8 ひらゆの森 入浴費（大人）</td><td>700</td></tr>
+        <tr class="flex"><td>D8 泡湯小毛巾（現場購買，無租借；可自備省下，浴巾 ¥500）</td><td>200</td></tr>
+        <tr class="flex"><td>D8 有鎖置物櫃（洗髮精、沐浴乳、吹風機免費）</td><td>100</td></tr>
+        <tr class="flex"><td>D7 熊牧場熊飼料（¥100 起，抓約 ¥200）</td><td>200</td></tr>
+        <tr class="flex"><td>D2 濱松動物園年票差額（只在出園吃鰻魚再回園時；年票 ¥1,500 − 當日票 ¥500）</td><td>1,000</td></tr>
+        <tr class="flex"><td>D10 樂高「ハロウィン・ナイト」夜間票（2025 年價格 ¥2,000，2026 以官網為準）</td><td>2,000</td></tr>
+        <tr class="flex"><td><strong>彈性項目小計（約 NT$910）</strong></td><td><strong>4,200</strong></td></tr>
+      </tbody>
+    </table>
+    <div class="flexnote">🟠 橘色底色的項目是彈性支出：用到才花，沒有用到就不算。上方「單人總預算」不含這些；含全部彈性項目的上限約 NT$65,200。</div>
+  </div>
+
+  <div class="bsec">
+    <h3>💰 單人總預算概估（含機票／住宿，不含眼鏡費用）</h3>
+    <table class="btable">
+      <tbody>
+        <tr><td>機票（已訂）</td><td>NT$12,592</td></tr>
+        <tr><td>住宿 10 晚（已訂）</td><td>NT$21,295</td></tr>
+        <tr><td>交通（円換算，指定席）</td><td>約 NT$9,940</td></tr>
+        <tr><td>門票景點（円換算）</td><td>約 NT$2,850</td></tr>
+        <tr><td>餐飲（円換算）</td><td>約 NT$14,348</td></tr>
+        <tr><td>伴手禮／雜支預留（円換算）</td><td>約 NT$3,261</td></tr>
+        <tr class="tot"><td>單人合計（新台幣，不含彈性項目）</td><td>約 NT$64,300</td></tr>
+        <tr class="flex"><td>含全部彈性項目的上限</td><td>約 NT$65,200</td></tr>
+      </tbody>
+    </table>
+    <div class="infobox">ℹ️ 機票與住宿已按實際訂購金額列入；交通票券、門票、餐飲、雜支仍為円計預估（依 1 台幣≈4.6 日圓換算），實際依匯率與現場花費為準。以上不含 OWNDAYS Nikon 1.74 鏡片費用。花火觀賞席位皆為免費站席，如需付費棧敷席請另加預算。</div>
+  </div>
+</div>
+
+<div id="food" class="section food-section">
+  <div class="food-subnav">
+    <button class="fsub-btn active" onclick="showFood('fdaily',this)">📅 每日餐表（D1–D11）</button>
+    <button class="fsub-btn" onclick="showFood('fdessert',this)">🍰 住宿城市甜點名單</button>
+    <button class="fsub-btn" onclick="showFood('fhours',this)">🕒 營業時間</button>
+  </div>
+
+  <div class="fpanel active" id="fdaily">
+    <div class="fnote">用餐原則：全熟、不吃生食；蝦天婦羅／炸蝦可以吃，但同一天不會全是蝦店；零排隊（排隊就直接改備案）；每餐都有備案。營業時間與動物園活動請以官網當日公告為準。</div>
+
+    <div class="day-row"><div class="day-badge">D1<br>10/22</div><div class="day-content">
+      <div class="ml"><span class="mt">早</span><div><div class="meal-name">台中機場出發前自理（航班 08:45，日本落地已近午餐）</div></div></div>
+      <div class="ml"><span class="mt">午</span><div><div class="meal-name">551蓬萊 難波本店 外帶豬肉包／燒賣，火鳥號車廂內享用</div><div class="meal-backup">備案：Namba Walk 洋食便當、Vie de France 阪神三宮店</div></div></div>
+      <div class="ml"><span class="mt">甜</span><div><div class="meal-name">晚餐後濱松站前 治一郎 年輪蛋糕外帶</div></div></div>
+      <div class="ml"><span class="mt">晚</span><div><div class="meal-name">分支 A（19:40 前能入座）：うなぎ藤田 濱松站前店（17:00–21:00）</div><div class="meal-backup">備案：分支 B（來不及）：むつぎく 濱松煎餃（17:00–21:00，週一二休）；石松餃子 JR 濱松站店（11:00–22:00）、五味八珍 濱松站店</div></div></div>
+    </div></div>
+
+    <div class="day-row"><div class="day-badge">D2<br>10/23</div><div class="day-content">
+      <div class="ml"><span class="mt">早</span><div><div class="meal-name">客美多咖啡 濱松站前店烤吐司＋水煮蛋</div><div class="meal-backup">備案：Vie de France 濱松店</div></div></div>
+      <div class="ml"><span class="mt">午</span><div><div class="meal-name">園內餐飲或超商便當野餐（11:00 もぐもぐ看完後用餐）</div><div class="meal-backup">備案：分支：出園吃志ぶき（3.56，11:00–15:00），需買年票 ¥1,500 才能再入園</div></div></div>
+      <div class="ml"><span class="mt">甜</span><div><div class="meal-name">園內冰品／霜淇淋（約 14:30）</div></div></div>
+      <div class="ml"><span class="mt">晚</span><div><div class="meal-name">分支 A（D1 已吃鰻魚）：むつぎく 濱松煎餃（週五營業）；分支 B（D1 吃餃子）：八百德 鰻魚（至 20:00 L.O.）</div><div class="meal-backup">備案：石松餃子 JR 濱松站店、うなぎ藤田 濱松站前店、川專</div></div></div>
+    </div></div>
+
+    <div class="day-row"><div class="day-badge">D3<br>10/24</div><div class="day-content">
+      <div class="ml"><span class="mt">早</span><div><div class="meal-name">Doutor 濱松站店 起司火腿三明治組合</div><div class="meal-backup">備案：北の庭 THE KURETAKESO 飯店早餐（¥1,500，06:30–09:30，最後進場 09:00，需加購；不特別推薦）</div></div></div>
+      <div class="ml"><span class="mt">午</span><div><div class="meal-name">靜岡站內 清水港まぐろカツ丼（3.48）（全熟炸鮪魚排丼）</div><div class="meal-backup">備案：一風堂 靜岡ASTY店（3.08）、ASTY 美食街炸豬排定食</div></div></div>
+      <div class="ml"><span class="mt">甜</span><div><div class="meal-name">ななや 靜岡本店抹茶冰淇淋</div><div class="meal-backup">備案：キルフェボン 靜岡本店（週六易排隊，改外帶）</div></div></div>
+      <div class="ml"><span class="mt">晚</span><div><div class="meal-name">17:21 前於靜岡站 ASTY 買熟食便當，燒津花火屋台小吃補充；宵夜青葉橫丁 三河屋（3.58）</div><div class="meal-backup">備案：靜岡站內 三寶樂</div></div></div>
+    </div></div>
+
+    <div class="day-row"><div class="day-badge">D4<br>10/25</div><div class="day-content">
+      <div class="ml"><span class="mt">早</span><div><div class="meal-name">St.Marc Cafe 靜岡站前店巧克力可頌＋美式</div><div class="meal-backup">備案：Starbucks 靜岡站前店</div></div></div>
+      <div class="ml"><span class="mt">午</span><div><div class="meal-name">11:00–12:15 日本平動物園 Rest House 蛋包飯／炸雞咖哩飯，避開午間尖峰</div><div class="meal-backup">備案：靜岡站預購熱壓吐司／漢堡便當、園內輕食販賣部熱狗堡＋薯條</div></div></div>
+      <div class="ml"><span class="mt">甜</span><div><div class="meal-name">園內霜淇淋／冰品（約 14:40）</div><div class="meal-backup">備案：17:07–17:26 於靜岡站外帶</div></div></div>
+      <div class="ml"><span class="mt">晚</span><div><div class="meal-name">熱海 KURIYA 熱海まぐろ市場（3.25）全熟炸魚／熟食海鮮定食</div><div class="meal-backup">備案：熱海站 LUSCA 伊豆太郎（3.41）</div></div></div>
+    </div></div>
+
+    <div class="day-row"><div class="day-badge">D5<br>10/26</div><div class="day-content">
+      <div class="ml"><span class="mt">早</span><div><div class="meal-name">客美多咖啡 靜岡站前店烤吐司＋雞蛋沙拉</div><div class="meal-backup">備案：Vie de France 靜岡站店</div></div></div>
+      <div class="ml"><span class="mt">午</span><div><div class="meal-name">日本平夢テラス Cafe靜岡茶泡飯／三明治</div><div class="meal-backup">備案：久能山纜車站旁山頂休憩所（熱烏龍／蕎麥麵，可加炸櫻花蝦）、靜岡站 ASTY 炸豬排定食</div></div></div>
+      <div class="ml"><span class="mt">甜</span><div><div class="meal-name">CHA10 靜岡店有機抹茶芭菲</div></div></div>
+      <div class="ml"><span class="mt">晚</span><div><div class="meal-name">靜岡勝富（3.20）純豬肉炸豬排定食</div><div class="meal-backup">備案：青葉橫丁 靜岡關東煮</div></div></div>
+    </div></div>
+
+    <div class="day-row"><div class="day-badge hida-badge">D6<br>10/27</div><div class="day-content">
+      <div class="ml"><span class="mt">早</span><div><div class="meal-name">Doutor 靜岡站店起司火腿三明治＋熱拿鐵</div><div class="meal-backup">備案：超商熱狗堡／美式鬆餅＋熱咖啡</div></div></div>
+      <div class="ml"><span class="mt">午</span><div><div class="meal-name">名古屋站購買 味噌豬排弁當＋天むす，特急ひだ車上享用</div><div class="meal-backup">備案：抵達高山後老街全熟飛驒牛串燒＋醬油煎餅</div></div></div>
+      <div class="ml"><span class="mt">甜</span><div><div class="meal-name">茶乃芽（3.36）冷凍草莓冰串</div><div class="meal-backup">備案：高山布丁亭</div></div></div>
+      <div class="ml"><span class="mt">晚</span><div><div class="meal-name">丸明 高山店（3.62） 飛驒牛燒肉（無休）</div><div class="meal-backup">備案：萬代角店（3.45）、寿々や（3.56）、房明（3.42）（週一休）</div></div></div>
+    </div></div>
+
+    <div class="day-row"><div class="day-badge hida-badge">D7<br>10/28</div><div class="day-content">
+      <div class="ml"><span class="mt">早</span><div><div class="meal-name">宮川朝市（07:00 起，飛驒牛包子、玉子燒、五平餅；07:40 發車前回站）</div><div class="meal-backup">備案：超商／高山站前麵包店；飯店自助早餐（¥1,500，06:30–09:30）</div></div></div>
+      <div class="ml"><span class="mt">午</span><div><div class="meal-name">新穗高纜車頂 Alpama 餐廳 飛驒牛可頌三明治</div><div class="meal-backup">備案：鍋平高原站食堂飛驒豬炸豬排／熱烏龍、平湯 アルプス街道平湯朴葉味噌定食</div></div></div>
+      <div class="ml"><span class="mt">甜</span><div><div class="meal-name">纜車頂 飛驒高原鮮奶霜淇淋</div></div></div>
+      <div class="ml"><span class="mt">晚</span><div><div class="meal-name">京や 鄉土料理＋朴葉味噌（週三營業）</div><div class="meal-backup">備案：寿々や（朴葉みそステーキ定食）、萬代角店</div></div></div>
+    </div></div>
+
+    <div class="day-row"><div class="day-badge hida-badge">D8<br>10/29</div><div class="day-content">
+      <div class="ml"><span class="mt">早</span><div><div class="meal-name">飯店自助早餐（¥1,500，06:30–07:10 吃完；不想吃就超商）</div><div class="meal-backup">備案：高山站前咖啡館烤吐司組合、超商三明治</div></div></div>
+      <div class="ml"><span class="mt">午</span><div><div class="meal-name">五千尺酒店 河童食堂（3.45）山賊燒炸雞定食／信州鮭魚定食</div><div class="meal-backup">備案：上高地帝國飯店 Dining Room（不等位）、大正池飯店食堂</div></div></div>
+      <div class="ml"><span class="mt">甜</span><div><div class="meal-name">5HORN Cafe信州蘋果派＋手沖咖啡</div></div></div>
+      <div class="ml"><span class="mt">晚</span><div><div class="meal-name">高山：萬代角店（3.45）飛驒牛炭火焼／すき焼き（17:50 入店，18:20 前離店；搭 18:48 ひだ 20 號）</div><div class="meal-backup">備案：寿々や（3.56）、房明（3.42，週四營業）</div></div></div>
+    </div></div>
+
+    <div class="day-row"><div class="day-badge">D9<br>10/30</div><div class="day-content">
+      <div class="ml"><span class="mt">早</span><div><div class="meal-name">客美多咖啡 名古屋榮店小倉紅豆奶油吐司</div><div class="meal-backup">備案：喫茶 Compal（炸蝦三明治等）</div></div></div>
+      <div class="ml"><span class="mt">午</span><div><div class="meal-name">熱田神宮 宮きしめん</div><div class="meal-backup">備案：馬喰一代 名古屋店飛驒牛午間定食</div></div></div>
+      <div class="ml"><span class="mt">甜</span><div><div class="meal-name">Piyorin ShopJR 名古屋站，辦完郵局外帶</div><div class="meal-backup">備案：HARBS 榮本店</div></div></div>
+      <div class="ml"><span class="mt">晚</span><div><div class="meal-name">ひつまぶし備長（3.61） 鰻魚三吃</div><div class="meal-backup">備案：炭焼 うな富士 名駅店、麵屋獅子丸</div></div></div>
+    </div></div>
+
+    <div class="day-row"><div class="day-badge">D10<br>10/31</div><div class="day-content">
+      <div class="ml"><span class="mt">早</span><div><div class="meal-name">星乃咖啡館 名古屋站店厚鬆餅＋烤吐司</div><div class="meal-backup">備案：Vie de France 名古屋站店</div></div></div>
+      <div class="ml"><span class="mt">午</span><div><div class="meal-name">名古屋站 ESCA 和幸 炸豬排；去樂高則園內用餐</div><div class="meal-backup">備案：JR Central Towers 12F 牛舌；海老どて食堂（3.49，炸蝦，搭配其他餐點）</div></div></div>
+      <div class="ml"><span class="mt">甜</span><div><div class="meal-name">HARBS 榮本店千層水果蛋糕</div><div class="meal-backup">備案：Piyorin Shop</div></div></div>
+      <div class="ml"><span class="mt">晚</span><div><div class="meal-name">鳥開總本家（3.45） 名古屋地雞親子丼／手羽先</div><div class="meal-backup">備案：雞三和 名古屋站店、味仙 JR 名古屋站店、スガキヤ</div></div></div>
+    </div></div>
+
+    <div class="day-row"><div class="day-badge">D11<br>11/01</div><div class="day-content">
+      <div class="ml"><span class="mt">早</span><div><div class="meal-name">Doutor／Starbucks 名古屋站店火腿起司可頌＋拿鐵</div><div class="meal-backup">備案：BOUL'ANGE 名古屋店</div></div></div>
+      <div class="ml"><span class="mt">午</span><div><div class="meal-name">世界の山ちゃん 名古屋手羽先（機場 4F，安檢前）</div><div class="meal-backup">備案：機場 4F 矢場とん／雞三和、4F 洋食漢堡排</div></div></div>
+      <div class="ml"><span class="mt">甜</span><div><div class="meal-name">西條園抹茶カフェ 中部國際機場店抹茶聖代，14:15 前外帶；以 JTTP 時間為優先</div></div></div>
+    </div></div>
+  </div>
+
+  <div class="fpanel" id="fdessert">
+    <div class="dessert-grid">
+      <div class="dgrp"><h3>🌊 濱松（D1–D3）</h3>
+        <div class="ml"><span class="mt">1</span><div class="meal-name"><b>治一郎 總店／站前店（3.28）</b> 綿密焦糖年輪蛋糕、洋菓子</div></div>
+        <div class="ml"><span class="mt">2</span><div class="meal-name"><b>SWEETS BANK／春華堂（3.46）</b> 鰻魚派聖代、現做千層派</div></div>
+        <div class="ml"><span class="mt">3</span><div class="meal-name"><b>Patisserie Abondance（3.65）</b> 法式塔類與千層酥</div></div>
+        <div class="ml"><span class="mt">4</span><div class="meal-name"><b>まるたや洋菓子店（3.52）</b> 濱松老字號起司蛋糕</div></div>
+      </div>
+      <div class="dgrp"><h3>🔵 靜岡（D3–D6）</h3>
+        <div class="ml"><span class="mt">1</span><div class="meal-name"><b>キルフェボン 靜岡本店（3.59）</b> 日本頂級水果塔發源總店</div></div>
+        <div class="ml"><span class="mt">2</span><div class="meal-name"><b>ななや 靜岡本店（3.58）</b> 濃度 No.1–No.7 抹茶冰淇淋</div></div>
+        <div class="ml"><span class="mt">3</span><div class="meal-name"><b>日本平夢テラス Cafe（3.22）</b> 富士山景＋抹茶霜淇淋與煎茶</div></div>
+        <div class="ml"><span class="mt">4</span><div class="meal-name"><b>CHA10 靜岡店（3.31）</b> 有機抹茶拿鐵與抹茶芭菲</div></div>
+      </div>
+      <div class="dgrp"><h3>🏔️ 飛驒高山（D6–D8）</h3>
+        <div class="ml"><span class="mt">1</span><div class="meal-name"><b>高山布丁亭（3.42）</b> 昭和風「雪國藍色布丁」</div></div>
+        <div class="ml"><span class="mt">2</span><div class="meal-name"><b>茶乃芽（3.36）</b> 老街冷凍草莓冰串、飛驒牛烤餅、抹茶霜淇淋</div></div>
+        <div class="ml"><span class="mt">3</span><div class="meal-name"><b>5HORN Cafe 五千尺酒店（3.54）</b> 上高地：信州蘋果派與手沖咖啡</div></div>
+        <div class="ml"><span class="mt">4</span><div class="meal-name"><b>喫茶 去來信／茶房 信濃屋（3.48）</b> 古民家喫茶，栗子布丁與抹茶紅豆湯</div></div>
+      </div>
+      <div class="dgrp"><h3>🏙️ 名古屋（D8–D11）</h3>
+        <div class="ml"><span class="mt">1</span><div class="meal-name"><b>HARBS 榮本店（3.58）</b> 千層水果蛋糕總本店</div></div>
+        <div class="ml"><span class="mt">2</span><div class="meal-name"><b>Piyorin Shop（3.51）</b> JR 名古屋站小雞布丁蛋糕</div></div>
+        <div class="ml"><span class="mt">3</span><div class="meal-name"><b>喫茶 Compal（3.52）</b> 小倉紅豆奶油吐司、炸蝦三明治</div></div>
+        <div class="ml"><span class="mt">4</span><div class="meal-name"><b>妙香園 サカエチカ店（3.25）</b> 榮地下街茶類甜點</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fpanel" id="fhours">
+    <div class="dessert-grid">
+      <div class="dgrp"><h3>🍽️ 行程重點餐飲與景點 Cafe</h3>
+        <div class="ml"><span class="mt">1</span><div class="meal-name"><b>551蓬萊 難波本店</b> 外帶專櫃 10:00–21:30；內用 11:00–22:00（L.O. 21:30）；每月第 3 個週二休</div></div>
+        <div class="ml"><span class="mt">2</span><div class="meal-name"><b>ななや 靜岡本店</b> 11:00–19:00；週三休（遇國定假日正常營業）</div></div>
+        <div class="ml"><span class="mt">3</span><div class="meal-name"><b>キルフェボン 靜岡本店</b> 11:00–19:00；無休</div></div>
+        <div class="ml"><span class="mt">4</span><div class="meal-name"><b>CHA10 靜岡店</b> 11:00–19:00；週三休</div></div>
+        <div class="ml"><span class="mt">5</span><div class="meal-name"><b>日本平夢テラス Cafe</b> 09:00–17:00（Cafe 最後點餐約 16:30；週六展覽館開放至 21:00）；每月第 2 個週二休（遇假日順延）</div></div>
+        <div class="ml"><span class="mt">6</span><div class="meal-name"><b>5HORN Cafe（上高地五千尺）</b> 10:00–16:00；開山期間（4 月下旬～11 月中旬）無休</div></div>
+        <div class="ml"><span class="mt">7</span><div class="meal-name"><b>Alpama 餐廳（新穗高纜車西穗高口站 4F）</b> 09:00–15:30（熱食約 10:00–15:00，隨纜車班次微調）；配合纜車營運與檢修日</div></div>
+        <div class="ml"><span class="mt">8</span><div class="meal-name"><b>西條園抹茶カフェ 中部國際機場店（4F 藍天城）</b> 10:00–20:00（L.O. 19:30）；無休（依機場商場公告）</div></div>
+      </div>
+      <div class="dgrp"><h3>☕ 連鎖咖啡店營業時間</h3>
+        <div class="ml"><span class="mt">1</span><div class="meal-name"><b>客美多咖啡</b> 濱松站前店 07:00–22:00；靜岡站前店 07:00–22:00；名古屋榮店 07:00–23:00</div></div>
+        <div class="ml"><span class="mt">2</span><div class="meal-name"><b>Doutor Coffee</b> 濱松站店 07:00–21:30；靜岡站店 07:00–22:00；名古屋站店 06:30–22:00</div></div>
+        <div class="ml"><span class="mt">3</span><div class="meal-name"><b>Vie de France</b> 阪神三宮店 07:00–21:00；濱松店 07:00–21:00；靜岡站店 07:00–21:00；名古屋站店 07:00–22:00</div></div>
+        <div class="ml"><span class="mt">4</span><div class="meal-name"><b>St.Marc Cafe</b> 靜岡站前店 07:00–22:00</div></div>
+        <div class="ml"><span class="mt">5</span><div class="meal-name"><b>Starbucks</b> 靜岡站前店、名古屋站店 07:00–22:00／22:30</div></div>
+        <div class="ml"><span class="mt">6</span><div class="meal-name"><b>星乃咖啡館</b> 名古屋站店 07:00–22:00（L.O. 21:30）</div></div>
+        <div class="ml"><span class="mt">7</span><div class="meal-name"><b>喫茶 Compal</b> 榮東店／名古屋站地下街店 08:00–21:00（L.O. 20:45）</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="sop" class="section">
+  <div class="sopcard">
+    <h3>🛡️ 關鍵 SOP 與預約提醒</h3>
+    <div class="sopitem"><div class="sopkey">第一天交通</div><div class="sopval">D1 近鐵特急火鳥號已預定 Premium 綠色車廂 7A 座席（特急費 ¥2,830 已線上付清）。搭車時進出閘門直接使用 Apple Suica 感應扣除基本車資，無需購買實體票。抵達名古屋後至 ESCA 店送件，隨後搭新幹線至濱松。晚餐依分支：來得及吃うなぎ藤田（17:00–21:00，建議 20:00 前入座）；來不及改吃むつぎく（17:00–21:00，週一、二公休，餃子賣完即收），排隊或售完改石松餃子 JR 濱松站店（11:00–22:00、無休）。</div></div>
+    <div class="sopitem"><div class="sopkey">用餐原則</div><div class="sopval">全程全熟、不吃生食；蝦天婦羅可以吃，但同日餐廳不全是蝦店；以零排隊為原則，遇排隊直接換備案。</div></div>
+    <div class="sopitem"><div class="sopkey">動物園資訊</div><div class="sopval">濱松市動物園：09:00 開園（入園至 16:00），原則不可再入園，買年票（¥1,500）才有機會重複進出，同日再入園請在入口確認；北極熊もぐもぐタイム每日 11:00，週四另加 13:30（10/23 為週五，只有 11:00）。日本平動物園：09:00–16:30，週一休園；官方活動表沒有北極熊固定餵食秀，10/25 的 13:30 是美洲獅餵食體驗（抽選）。東山動植物園：週一休園，10/30 為週五可入園，入園料自 2026/10/1 起 ¥800（年票 ¥3,200），北極熊固定餵食時間官方未公布。奧飛驒熊牧場：4–11 月 08:00–17:00、無休，餵食為自行購買飼料，無固定場次。</div></div>
+    <div class="sopitem"><div class="sopkey">雙煙火大會</div><div class="sopval">D3 燒津海上花火大會（75周年特別企劃約 8,000 發），D4 熱海海上花火大會（秋季場約 3,000 發）。兩場皆為免費站席，請提早占位。散場時實施進站管制，請提前將 Apple Suica 加值足夠金額。</div></div>
+    <div class="sopitem"><div class="sopkey">高山與山區</div><div class="sopval">D6 於 08:15 前後退房，搭乘新幹線 Hikari 703號（09:07發、10:01抵）至名古屋，轉乘 10:48 特急ひだ 7號（13:12 抵高山），下午漫步高山陣屋與三町老街；D7 先逛宮川朝市吃早餐（07:00 起）再搭 07:40 巴士，新穗高雙層纜車（三段紅葉，纜車票 ¥3,800 另付），熊牧場待到 17:00 閉園，搭 17:20 末班（18:31 抵高山）；D8 同樣 07:40 從高山出發，08:38 抵平湯、轉 09:00 接駁，09:25 抵上高地（晨間低溫請注意保暖），14:30 或 15:00 離開上高地、平湯泡湯，16:30 搭巴士、17:31 回高山，取行李、吃完晚餐搭 18:48 ひだ 20號（21:03 抵名古屋）。巴士班次依濃飛巴士官方時刻表，平日皆運行，官方警告可能嚴重延誤，出發前再確認官網。</div></div>
+    <div class="sopitem"><div class="sopkey">眼鏡取件</div><div class="sopval">D1 已於 OWNDAYS 名古屋站 ESCA 店完成送件（Nikon 1.74 超薄鏡片），取件安排於 D10（自由日），時間彈性充裕。</div></div>
+    <div class="sopitem"><div class="sopkey">JTTP</div><div class="sopval">二次審查安排於 D11 中部國際機場 T1 出境審查場。D9（週五）先在名古屋中央郵便局（JP Tower 名古屋內）以現金購買 ¥4,000 收入印紙（窗口不收現金；該局週日營業至 18:00，可當備案）。需要提供指紋。D11 攜帶護照、初審通過信（申請編號）、登錄的白金級以上信用卡與印紙，報到後先在 4 樓用餐，再安檢入關辦理，預留約 1 小時。</div></div>
+    <div class="sopitem"><div class="sopkey">萬聖節活動</div><div class="sopval">D10（10/31）樂高樂園限定夜間活動「ハロウィン・ナイト」（2026/10/30–11/1，18:00–21:00，2025 年每日限量 3,000 張，需另購夜間票，2026 票價請看官網）；若偏好成人取向購物與餐飲，可選擇榮商圈/久屋大通公園。</div></div>
+  </div>
+</div>
+
+<script>
+function showSec(id, el) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  el.classList.add('active');
+  window.scrollTo(0, 0);
+}
+function showDay(i) {
+  document.querySelectorAll('.day-panel').forEach((p, j) => p.classList.toggle('active', i === j));
+  document.querySelectorAll('.tab-btn').forEach((b, j) => b.classList.toggle('active', i === j));
+}
+function showFood(id, btn) {
+  document.querySelectorAll('.fpanel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.fsub-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+  window.scrollTo(0, 0);
+}
+</script>
+</body>
+</html>
